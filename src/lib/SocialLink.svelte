@@ -9,7 +9,7 @@ export let linkText: string
         <div class="logo-container">
             <slot>Logo image goes here</slot>
         </div>
-        <span>{linkText}</span>
+        <span class="link-text">{linkText}</span>
     </div>
 </a>
 
@@ -21,7 +21,7 @@ $transition: 0.15s ease;
 
 span.arrow {
     color: $gruvbox-green;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0;
     transition: opacity $transition;
 }
@@ -56,7 +56,17 @@ a.container {
             & > span.arrow {
                 opacity: 1;
             }
+
+            & > span.link-text {
+                text-decoration: underline;
+            }
         }
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    span.link-text {
+        display: none;
     }
 }
 </style>

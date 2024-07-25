@@ -6,9 +6,9 @@ import LinkedIn from "./vector/LinkedIn.svelte"
 
 <div class="container">
     <div class="name-container">
-        <h1>connellr023</h1>
+        <h1>connell_reffo</h1>
         <ul>
-            <li>programmer</li>
+            <li>student</li>
             <li>builder</li>
             <li>web_developer</li>
         </ul>
@@ -29,7 +29,7 @@ import LinkedIn from "./vector/LinkedIn.svelte"
 h1 {
     margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 ul {
@@ -51,10 +51,11 @@ div.name-container {
     ul {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.2rem;
 
         li {
             color: $gruvbox-lime;
+            font-size: 1.1rem;
 
             &:before {
                 color: $gruvbox-green;

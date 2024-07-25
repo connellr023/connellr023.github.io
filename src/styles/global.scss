@@ -10,3 +10,10 @@ body {
     color: $gruvbox-white;
     font-family: $font;
 }
+
+button {
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: none;
+}
