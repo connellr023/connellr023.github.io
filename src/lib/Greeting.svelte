@@ -1,3 +1,9 @@
+<script>
+import SocialLink from "./SocialLink.svelte"
+import Github from "./vector/GitHub.svelte"
+import LinkedIn from "./vector/LinkedIn.svelte"
+</script>
+
 <div class="container">
     <div class="name-container">
         <h1>connellr023</h1>
@@ -8,7 +14,12 @@
         </ul>
     </div>
     <div class="contact-container">
-
+        <SocialLink link="https://github.com/connellr023" linkText="github/connellr023">
+            <Github />
+        </SocialLink>
+        <SocialLink link="https://www.linkedin.com/in/connell-reffo/" linkText="in/connell-reffo">
+            <LinkedIn />
+        </SocialLink>
     </div>
 </div>
 
@@ -29,9 +40,11 @@ ul {
 
 div.container {
     display: flex;
-    gap: 3rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+    max-width: 30rem;
 }
 
 div.name-container {
@@ -50,5 +63,10 @@ div.name-container {
             }
         }
     }
+}
+
+div.contact-container {
+    display: flex;
+    flex-direction: column;
 }
 </style>
