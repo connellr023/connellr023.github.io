@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./variables.scss";
+
+:root {
+    font-size: clamp(15px, 2.5lvw, 20px);
+}
+
+body {
+    background-color: $gruvbox-black;
+    color: $gruvbox-white;
+    font-family: $font;
+}
