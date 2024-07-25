@@ -1,16 +1,14 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro"
+import ContentColumn from "../layouts/ContentColumn.astro"
 
+import NameEffect from "../components/NameEffect.astro"
+
+import "../styles/global.scss"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>connellr023</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title={"connellr023"}>
+    <ContentColumn>
+        <NameEffect />
+    </ContentColumn>
+</MainLayout>
