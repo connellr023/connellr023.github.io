@@ -11,7 +11,7 @@ $gruvbox-white: #ebdbb2;
 $gruvbox-grey-1: #393634;
 $gruvbox-grey-2: #5B524C;
 
-$mobile-breakpoint: 568px;
+$mobile-breakpoint: 460px;
 
 @mixin fade-transform($transform, $duration: 0.5s, $delay-step: 0.15s, $children: 1, $anim-delay: 0, $anim-id) {
     & > * {

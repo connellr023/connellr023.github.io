@@ -21,7 +21,7 @@ import "../styles/global.scss"
 @import "../styles/variables.scss";
 
 main {
-    $horizontal-margin: 15lvw;
+    $horizontal-margin: 20px;
     $vertical-margin: 10lvh;
 
     margin: $vertical-margin $horizontal-margin;
@@ -32,9 +32,8 @@ main {
 
 p {
     border-left: 2px solid $gruvbox-white;
-    padding-left: 1rem;
+    padding-left: 0.7rem;
     line-height: 1.3;
-    max-width: 800px;
     text-align: justify;
 
     i {
@@ -49,5 +48,7 @@ div.content-container {
         $anim-delay: 0.1s,
         $anim-id: 3
     );
+
+    max-width: 800px;
 }
 </style>

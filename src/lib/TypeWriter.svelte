@@ -14,7 +14,7 @@ onMount(() => {
     }, typeSpeed)
 
     const blinkInterval = setInterval(() => {
-        isBlinkVisible = !isBlinkVisible
+        isBlinkVisible = current === text.length ? !isBlinkVisible : true
     }, blinkSpeed)
 
     return () => {
@@ -25,16 +25,37 @@ onMount(() => {
 </script>
 
 
-<span>{text.slice(0, current)}</span>
-<span class="invis">{text.slice(current, text.length)}</span>
+<span>
+    {text.slice(0, current)}
+    <span class={`invis ${isBlinkVisible ? "blink" : ""}`}>{text.slice(current, text.length)}</span>
+</span>
 
 <style lang="scss">
 span {
-    display: inline;
-    word-wrap: nowrap;
-}
+    display: flex;
+    flex-direction: row;
 
-span.invis {
-    color: red;
+    span.invis {
+        visibility: hidden;
+        position: relative;
+
+        &:after {
+            $width: 0.77rem;
+
+            content: " ";
+            position: absolute;
+            width: $width;
+            height: 100%;
+            border-radius: 0.2rem;
+            background-color: transparent;
+            visibility: visible;
+            left: -$width;
+        }
+
+        &.blink:after {
+            background-color: #ffffff;
+            mix-blend-mode: difference;
+        }
+    }
 }
 </style>

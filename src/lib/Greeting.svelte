@@ -10,8 +10,8 @@ import LinkedIn from "./vector/LinkedIn.svelte"
         <h1>
             <TypeWriter
                 text="connell_reffo"
-                typeSpeed={300}
-                blinkSpeed={140}
+                typeSpeed={90}
+                blinkSpeed={300}
             />
         </h1>
         <ul>
