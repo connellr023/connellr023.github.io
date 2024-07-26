@@ -1,4 +1,6 @@
 <script lang="ts">
+import { onMount } from "svelte"
+
 type CommitResponse = {
     commit: {
         committer: {
@@ -25,27 +27,28 @@ const fetchCommit = async () => {
     }
 }
 
-fetchCommit()
+onMount(() => {
+    fetchCommit()
+})
 </script>
 
 <footer>
     <span class="license">
-        <span class="let">let</span>
+        <span class="token-red">let</span>
         license
-        <span class="equal">{"="}</span>
-        <span class="enum">Licenses</span><span class="equal">{"::"}</span><a class="enum" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
+        <span class="token-green">{"="}</span>
+        <span class="token-yellow">Licenses</span><span class="token-green">{"::"}</span><a class="token-yellow" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
     </span>
     <span class="divider">{"/* 2024 */"}</span>
     <span class="commit">
-        <span class="let">let</span>
+        <span class="token-red">let</span>
         last_commit
-        <span class="equal">{"="}</span>
+        <span class="token-green">{"="}</span>
         {#if commit === null}
-            <span class="enum">None</span>{";"}
+            <span class="token-yellow">None</span>{";"}
         {:else}
-            <span class="enum">Some</span>{"("}<a class="number" href={commit.html_url} target="_blank">{commitIdString}</a>{");"}
+            <span class="token-yellow">Some</span>{"("}<a class="token-pink" href={commit.html_url} target="_blank">{commitIdString}</a>{");"}
         {/if}
-        <!-- {`${commit === null ? "None" : commitIdString};`} -->
     </span>
 </footer>
 
@@ -62,22 +65,6 @@ a {
     &:hover {
         text-decoration: underline;
     }
-}
-
-.let {
-    color: $gruvbox-red;
-}
-
-.equal {
-    color: $gruvbox-green;
-}
-
-.enum {
-    color: $gruvbox-yellow;
-}
-
-.number {
-    color: $gruvbox-pink;
 }
 
 footer {

@@ -14,12 +14,18 @@ import LinkedIn from "./vector/LinkedIn.svelte"
         </ul>
     </div>
     <div class="contact-container">
-        <SocialLink link="https://github.com/connellr023" linkText="github/connellr023">
-            <Github />
-        </SocialLink>
-        <SocialLink link="https://www.linkedin.com/in/connell-reffo/" linkText="in/connell-reffo">
-            <LinkedIn />
-        </SocialLink>
+        <ul>
+            <li>
+                <SocialLink link="https://github.com/connellr023" linkText="github/connellr023">
+                    <Github />
+                </SocialLink>
+            </li>
+            <li>
+                <SocialLink link="https://www.linkedin.com/in/connell-reffo/" linkText="in/connell-reffo">
+                    <LinkedIn />
+                </SocialLink>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -49,6 +55,13 @@ div.container {
 
 div.name-container {
     ul {
+        @include fade-transform(
+            $transform: translateX(-1.3rem),
+            $children: 3,
+            $anim-delay: 0.2s,
+            $anim-id: 1
+        );
+
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
@@ -66,7 +79,16 @@ div.name-container {
     }
 }
 
-div.contact-container {
+div.contact-container > ul {
+    @include fade-transform(
+        $transform: translateX(1.3rem),
+        $children: 2,
+        $duration: 0.6s,
+        $delay-step: 0.2s,
+        $anim-delay: 0.1s,
+        $anim-id: 2
+    );
+
     display: flex;
     flex-direction: column;
 }

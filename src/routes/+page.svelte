@@ -7,11 +7,13 @@ import "../styles/global.scss"
 
 <main>
     <Greeting />
-    <p>
-        Hey, I'm Connell, a <i>Computer Science</i> student at the <i>University of Calgary</i>.
-        I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
-        Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
-    </p>
+    <div class="content-container">
+        <p>
+            Hey, I'm Connell, a <i>Computer Science</i> student at the <i>University of Calgary</i>.
+            I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
+            Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
+        </p>
+    </div>
 </main>
 <Footer />
 
@@ -38,5 +40,14 @@ p {
     i {
         color: $gruvbox-lime;
     }
+}
+
+div.content-container {
+    @include fade-transform(
+        $transform: translateY(1.3rem),
+        $children: 1,
+        $anim-delay: 0.1s,
+        $anim-id: 3
+    );
 }
 </style>

@@ -3,15 +3,15 @@ export let link: string
 export let linkText: string
 </script>
 
-<a class="container" href={link} target="_blank">
-    <div class="inner">
+<div class="container">
+    <a class="inner" href={link} target="_blank">
         <span class="arrow">{"=>"}</span>
         <div class="logo-container">
             <slot>Logo image goes here</slot>
         </div>
         <span class="link-text">{linkText}</span>
-    </div>
-</a>
+    </a>
+</div>
 
 <style lang="scss">
 @import "../styles/variables.scss";
@@ -26,7 +26,7 @@ span.arrow {
     transition: opacity $transition;
 }
 
-div.inner {
+a.inner {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -35,13 +35,13 @@ div.inner {
     cursor: pointer;
     transition: transform $transition;
     padding-right: $shift-distance;
+    text-decoration: none;
+    color: $gruvbox-white;
 }
 
-a.container {
+div.container {
     margin: 0;
     padding: 10px;
-    color: $gruvbox-white;
-    text-decoration: none;
     transition: all $transition;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -50,7 +50,7 @@ a.container {
         background-color: $gruvbox-grey-1;
         border: 1px solid $gruvbox-grey-2;
 
-        & > div.inner {
+        & > a.inner {
             transform: translateX($shift-distance);
 
             & > span.arrow {

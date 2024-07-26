@@ -12,3 +12,30 @@ $gruvbox-grey-1: #393634;
 $gruvbox-grey-2: #5B524C;
 
 $mobile-breakpoint: 568px;
+
+@mixin fade-transform($transform, $duration: 0.5s, $delay-step: 0.15s, $children: 1, $anim-delay: 0, $anim-id) {
+    & > * {
+        animation: $duration fade-transform-#{$anim-id} ease forwards;
+        animation-delay: $anim-delay;
+
+        @keyframes fade-transform-#{$anim-id} {
+            0% {
+                opacity: 0;
+                transform: $transform;
+            }
+
+            100% {
+                opacity: 1;
+                transform: initial;
+            }
+        }
+    }
+
+    @for $i from 1 through $children {
+        & > *:nth-child(#{$i}) {
+            transform: translate(0, 0);
+            opacity: 0;
+            animation-delay: (($i - 1) * $delay-step) + $anim-delay;
+        }
+    }
+}
