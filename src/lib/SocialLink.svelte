@@ -4,7 +4,7 @@ export let linkText: string
 </script>
 
 <div class="container">
-    <a class="inner" href={link} target="_blank">
+    <a class="inner" href={link} target="_blank" draggable={false}>
         <span class="arrow">{"=>"}</span>
         <div class="logo-container">
             <slot>Logo image goes here</slot>

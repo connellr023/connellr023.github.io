@@ -1,12 +1,19 @@
 <script>
 import SocialLink from "./SocialLink.svelte"
+import TypeWriter from "./TypeWriter.svelte"
 import Github from "./vector/GitHub.svelte"
 import LinkedIn from "./vector/LinkedIn.svelte"
 </script>
 
 <div class="container">
     <div class="name-container">
-        <h1>connell_reffo</h1>
+        <h1>
+            <TypeWriter
+                text="connell_reffo"
+                typeSpeed={300}
+                blinkSpeed={140}
+            />
+        </h1>
         <ul>
             <li>student</li>
             <li>builder</li>
