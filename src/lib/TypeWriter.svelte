@@ -2,8 +2,8 @@
 import { onMount } from "svelte"
 
 export let text: string
-export let typeSpeed: number
-export let blinkSpeed: number
+export let typeSpeed: number = 110
+export let blinkSpeed: number = 300
 
 let current = 0
 let isBlinkVisible: boolean = true

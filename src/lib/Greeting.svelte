@@ -7,13 +7,7 @@ import LinkedIn from "./vector/LinkedIn.svelte"
 
 <div class="container">
     <div class="name-container">
-        <h1>
-            <TypeWriter
-                text="connell_reffo"
-                typeSpeed={90}
-                blinkSpeed={300}
-            />
-        </h1>
+        <h1><TypeWriter text="connell_reffo" /></h1>
         <ul>
             <li>student</li>
             <li>builder</li>
@@ -41,7 +35,7 @@ import LinkedIn from "./vector/LinkedIn.svelte"
 
 h1 {
     margin: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     font-size: 1.6rem;
 }
 
@@ -75,7 +69,7 @@ div.name-container {
 
         li {
             color: $gruvbox-lime;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
 
             &:before {
                 color: $gruvbox-green;

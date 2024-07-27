@@ -18,6 +18,15 @@ button {
     border: none;
 }
 
+.left-bar {
+    border-left: 2px solid $gruvbox-white;
+    padding-left: 0.7rem;
+
+    &.pink {
+        border-color: $gruvbox-pink;
+    }
+}
+
 .token-red {
     color: $gruvbox-red;
 }
