@@ -6,6 +6,7 @@ import React from "./vector/React.svelte"
 import C from "./vector/C.svelte"
 import Java from "./vector/Java.svelte"
 import Python from "./vector/Python.svelte"
+import PHP from "./vector/PHP.svelte"
 import Postgres from "./vector/Postgres.svelte"
 import Docker from "./vector/Docker.svelte"
 </script>
@@ -55,6 +56,12 @@ import Docker from "./vector/Docker.svelte"
     </li>
     <li>
         <div>
+            <PHP />
+            <p>PHP</p>
+        </div>
+    </li>
+    <li>
+        <div>
             <Postgres />
             <p>PostgreSQL</p>
         </div>
@@ -73,7 +80,7 @@ import Docker from "./vector/Docker.svelte"
 ul {
     @include fade-transform(
         $transform: translateY(-1.3rem),
-        $children: 9,
+        $children: 10,
         $anim-delay: 0.4s,
         $delay-step: 0.07s,
         $anim-id: 4

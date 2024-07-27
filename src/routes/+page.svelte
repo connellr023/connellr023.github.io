@@ -19,7 +19,7 @@ import "../styles/global.scss"
         </p>
 
         <h2 class="left-bar pink"><SectionTitle title="technologies" /></h2>
-        <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable and enjoy the ones below."}</p>
+        <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
         <div>
             <TechCarousel />
         </div>
@@ -64,14 +64,6 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
-                name="Atla"
-                description="Submission for Calgary Hacks 2024. A web app that provides a centralized platform to post and view volunteering events with location data supplied by City of Calgary's Open Data Portal."
-                stack={["Next.js", "Redis", "Vercel"]}
-            />
-        </div>
-        <div>
-            <ProjectEntry
-                isPrivate={false}
                 name="gratis"
                 description="A lightweight framework for developing REST-like APIs in PHP."
                 stack={["PHP", "PHPUnit", "Composer"]}
@@ -97,7 +89,7 @@ import "../styles/global.scss"
 
 main {
     $horizontal-margin: 20px;
-    $vertical-margin: 40px;
+    $vertical-margin: 50px;
 
     margin: $vertical-margin $horizontal-margin;
     display: flex;
