@@ -37,7 +37,7 @@ onMount(() => {
         <span class="token-red">let</span>
         license
         <span class="token-green">{"="}</span>
-        <span class="token-yellow">Licenses</span><span class="token-green">{"::"}</span><a class="token-yellow" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
+        <span class="token-yellow qualifier-after">Licenses</span><a class="token-yellow" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
     </span>
     <span class="divider">{"/* 2024 */"}</span>
     <span class="commit">

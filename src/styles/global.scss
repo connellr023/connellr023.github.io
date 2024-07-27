@@ -27,6 +27,11 @@ button {
     }
 }
 
+.qualifier-after:after {
+    content: "::";
+    color: $gruvbox-green;
+}
+
 .token-red {
     color: $gruvbox-red;
 }

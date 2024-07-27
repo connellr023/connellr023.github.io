@@ -40,7 +40,7 @@ import "../styles/global.scss"
 
 main {
     $horizontal-margin: 20px;
-    $vertical-margin: 10lvh;
+    $vertical-margin: 40px;
 
     margin: $vertical-margin $horizontal-margin;
     display: flex;
