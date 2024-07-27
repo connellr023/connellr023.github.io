@@ -18,12 +18,30 @@ button {
     border: none;
 }
 
+p {
+    line-height: 1.3;
+    text-align: justify;
+
+    i {
+        color: $gruvbox-lime;
+    }
+}
+
 .left-bar {
     border-left: 2px solid $gruvbox-white;
     padding-left: 0.7rem;
 
     &.pink {
         border-color: $gruvbox-pink;
+    }
+
+    &.red {
+        border-color: $gruvbox-red;
+    }
+
+    & + p {
+        margin-top: 0;
+        padding-top: 0.3rem;
     }
 }
 

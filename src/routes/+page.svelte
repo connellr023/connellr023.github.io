@@ -4,6 +4,7 @@ import Footer from "$lib/Footer.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import SectionTitle from "$lib/SectionTitle.svelte"
 import TechCarousel from "$lib/TechCarousel.svelte"
+import ProjectEntry from "$lib/ProjectEntry.svelte"
 
 import "../styles/global.scss"
 </script>
@@ -25,12 +26,68 @@ import "../styles/global.scss"
 
         <h2 class="left-bar pink"><SectionTitle title="main_projects" /></h2>
         <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
+        <div>
+            <ProjectEntry
+                isPrivate={true}
+                name="Oncology Quest"
+                description="A web app architected to aid Medical Oncology trainees and rotation directors."
+                stack={["Rust", "PgSQL", "Vue.js", "AWS", "Docker"]}
+            />
+        </div>
 
         <h2 class="left-bar pink"><SectionTitle title="learning_projects" /></h2>
         <p class="left-bar">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="Chatter Reborn"
+                description="A massively concurrent chat application architected for real-time, one-on-one conversations."
+                stack={["Gleam/Erlang", "React", "Docker"]}
+            />
+        </div>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="Chatter"
+                description="A web application designed for real-time, conversations within global chat rooms."
+                stack={["Vue.js", "Node.js", "Socket.io"]}
+            />
+        </div>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="tensort"
+                description="A CLI tool that utilizes a ResNet convolutional neural network to recognize content in images and sort them into classes."
+                stack={["Rust", "Libtorch", "Docker"]}
+            />
+        </div>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="Atla"
+                description="Submission for Calgary Hacks 2024. A web app that provides a centralized platform to post and view volunteering events with location data supplied by City of Calgary's Open Data Portal."
+                stack={["Next.js", "Redis", "Vercel"]}
+            />
+        </div>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="gratis"
+                description="A lightweight framework for developing REST-like APIs in PHP."
+                stack={["PHP", "PHPUnit", "Composer"]}
+            />
+        </div>
 
         <h2 class="left-bar pink"><SectionTitle title="school_projects" /></h2>
-        <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and possibly relevant in a job context.</p>
+        <p class="left-bar">These are <i>some</i> of my projects completed as school work (not all by myself) which were particularly interesting to me and possibly relevant in a job context.</p>
+        <div>
+            <ProjectEntry
+                isPrivate={true}
+                name="SNESK"
+                description="An implementation of the classic snake game that runs on a bare metal Rapberry Pi 4 with a SNES controller."
+                stack={["C"]}
+            />
+        </div>
     </div>
 </main>
 <Footer />
@@ -46,15 +103,6 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-p {
-    line-height: 1.3;
-    text-align: justify;
-
-    i {
-        color: $gruvbox-lime;
-    }
 }
 
 h2 {
