@@ -3,6 +3,7 @@ import Greeting from "$lib/Greeting.svelte"
 import Footer from "$lib/Footer.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import SectionTitle from "$lib/SectionTitle.svelte"
+import TechCarousel from "$lib/TechCarousel.svelte"
 
 import "../styles/global.scss"
 </script>
@@ -16,8 +17,14 @@ import "../styles/global.scss"
             Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
         </p>
 
+        <h2 class="left-bar pink"><SectionTitle title="technologies" /></h2>
+        <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable and enjoy the ones below."}</p>
+        <div>
+            <TechCarousel />
+        </div>
+
         <h2 class="left-bar pink"><SectionTitle title="main_projects" /></h2>
-        <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and have required significant time and effort."}</p>
+        <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
 
         <h2 class="left-bar pink"><SectionTitle title="learning_projects" /></h2>
         <p class="left-bar">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>

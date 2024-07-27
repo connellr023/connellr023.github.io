@@ -13,6 +13,8 @@ $gruvbox-grey-2: #5b524c;
 
 $mobile-breakpoint: 460px;
 
+$tech-icon-size: 2rem;
+
 @mixin fade-transform($transform, $duration: 0.5s, $delay-step: 0.15s, $children: 1, $anim-delay: 0, $anim-id) {
     & > * {
         animation: $duration fade-transform-#{$anim-id} ease forwards;
