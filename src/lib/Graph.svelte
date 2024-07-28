@@ -82,6 +82,10 @@ span {
         background-color: $lang-java;
         color: $gruvbox-white;
     }
+
+    &.svelte {
+        background-color: $lang-svelte;
+    }
 }
 
 div.container {

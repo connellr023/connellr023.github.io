@@ -49,7 +49,7 @@ import "../styles/global.scss"
                 isPrivate={false}
                 name="Chatter Reborn"
                 description="A massively concurrent chat application architected for real-time, one-on-one conversations."
-                stack={["Gleam/Erlang", "React", "Docker"]}
+                stack={["Gleam", "Gleeunit", "React", "Docker"]}
                 languageData={[
                   ["Gleam", "gleam", 52],
                   ["TS", "ts", 29],
@@ -63,7 +63,7 @@ import "../styles/global.scss"
                 isPrivate={false}
                 name="Chatter"
                 description="A web application designed for real-time, conversations within global chat rooms."
-                stack={["Vue.js", "Node.js", "Socket.io"]}
+                stack={["Vue.js", "Vitest", "Jest", "Node.js", "Socket.io"]}
                 languageData={[
                   ["TS", "ts", 80],
                   ["SCSS", "scss", 9],
@@ -92,15 +92,28 @@ import "../styles/global.scss"
                 languageData={[["PHP", "php", 100]]}
             />
         </div>
+        <div>
+            <ProjectEntry
+                isPrivate={false}
+                name="cr023"
+                description="My portfolio website which you are currently viewing!"
+                stack={["SvelteKit", "Typescript"]}
+                languageData={[
+                  ["Svelte", "svelte", 95],
+                  ["SCSS", "scss", 3],
+                  ["TS", "ts", 2]
+                ]}
+            />
+        </div>
 
         <h2 class="left-bar pink"><SectionTitle title="school_projects" /></h2>
-        <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and possibly relevant in a job context.</p>
+        <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
         <div>
             <ProjectEntry
                 isPrivate={true}
                 name="SNESK"
-                description="An implementation of the classic snake game that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
-                stack={["C"]}
+                description="A re-implementation of snake that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
+                stack={["C", "Raspberry Pi 4"]}
                 languageData={[
                   ["C", "c", 97],
                   ["Assembly", "asm", 3]

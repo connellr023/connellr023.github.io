@@ -13,7 +13,6 @@ export let languageData: GraphData[] = []
     <h3>
         <span class="token-red">{isPrivate ? "private" : "public"}</span>
         <span class="name">{name}</span>
-        <span class="arrow">{"-> !"}</span>
     </h3>
 </a>
 <p class="left-bar">{description}</p>
@@ -55,10 +54,6 @@ a.container {
         & > h3 > span.name {
             text-decoration: underline;
         }
-
-        & > h3 > span.arrow {
-            opacity: 1;
-        }
     }
 }
 
@@ -94,12 +89,12 @@ p.comment {
     $dist: 0.5rem;
 
     &:before {
-        content: "/*";
+        content: "/\*";
         margin-right: $dist;
     }
 
     &:after {
-        content: "*/";
+        content: "\*/";
         margin-left: $dist;
     }
 }

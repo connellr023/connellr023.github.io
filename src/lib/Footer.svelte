@@ -24,16 +24,16 @@ onMount(() => {
 
 <footer>
     <span class="license">
-        <span class="token-red">let</span>
-        license
-        <span class="token-green">{"="}</span>
+        <span class="token-red hide-token">let</span>
+        <span class="hide-token">license</span>
+        <span class="token-green hide-token">{"="}</span>
         <span class="token-yellow qualifier-after">Licenses</span><a class="token-yellow" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
     </span>
     <span class="divider">{"/* 2024 */"}</span>
     <span class="commit">
-        <span class="token-red">let</span>
-        last_commit
-        <span class="token-green">{"="}</span>
+        <span class="token-red hide-token">let</span>
+        <span class="hide-token">commit</span>
+        <span class="token-green hide-token">{"="}</span>
         {#if commit === null}
             <span class="token-yellow">None</span>{";"}
         {:else}
@@ -73,7 +73,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    span.divider {
+    span.hide-token {
         display: none;
     }
 }
