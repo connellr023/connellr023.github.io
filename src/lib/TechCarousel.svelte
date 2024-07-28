@@ -106,7 +106,7 @@ ul {
             opacity: 0;
             position: absolute;
             left: 50%;
-            top: calc(100% - 0.7rem);
+            top: 100%;
             transform: translateX(-50%);
             transition: opacity 0.1s ease;
 

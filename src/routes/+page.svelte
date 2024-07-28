@@ -12,7 +12,7 @@ import "../styles/global.scss"
 <main>
     <Greeting />
     <div class="content-container">
-        <p class="left-bar">
+        <p class="left-bar intro">
             Hey, I'm Connell, a <i>Computer Science</i> student at the <i>University of Calgary</i>.
             I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
             Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
@@ -20,7 +20,7 @@ import "../styles/global.scss"
 
         <h2 class="left-bar pink"><SectionTitle title="technologies" /></h2>
         <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
-        <div>
+        <div class="carousel-container">
             <TechCarousel />
         </div>
 
@@ -113,5 +113,13 @@ div.content-container {
     );
 
     max-width: 800px;
+}
+
+div.carousel-container {
+    margin-top: 1rem;
+}
+
+p.intro {
+    margin-top: 0.8rem;
 }
 </style>
