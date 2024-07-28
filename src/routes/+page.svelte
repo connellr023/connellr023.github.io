@@ -94,17 +94,26 @@ import "../styles/global.scss"
         </div>
 
         <h2 class="left-bar pink"><SectionTitle title="school_projects" /></h2>
-        <p class="left-bar">These are <i>some</i> of my projects completed as school work (not all by myself) which were particularly interesting to me and possibly relevant in a job context.</p>
+        <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and possibly relevant in a job context.</p>
         <div>
             <ProjectEntry
                 isPrivate={true}
                 name="SNESK"
-                description="An implementation of the classic snake game that runs on a bare metal Rapberry Pi 4 with a SNES controller."
+                description="An implementation of the classic snake game that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
                 stack={["C"]}
                 languageData={[
                   ["C", "c", 97],
                   ["Assembly", "asm", 3]
                 ]}
+            />
+        </div>
+        <div>
+            <ProjectEntry
+                isPrivate={true}
+                name="Self-Checkout Station Control Software"
+                description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
+                stack={["Java, JUnit", "Swing"]}
+                languageData={[["Java", "java", 100]]}
             />
         </div>
     </div>

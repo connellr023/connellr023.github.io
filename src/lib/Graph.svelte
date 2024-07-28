@@ -1,4 +1,6 @@
 <script lang="ts">
+import type { GraphData } from "$lib/index"
+
 export let data: GraphData[]
 </script>
 
@@ -73,6 +75,11 @@ span {
 
     &.asm {
         background-color: $lang-asm;
+        color: $gruvbox-white;
+    }
+
+    &.java {
+        background-color: $lang-java;
         color: $gruvbox-white;
     }
 }

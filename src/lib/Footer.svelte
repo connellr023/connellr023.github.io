@@ -1,16 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte"
-
-type CommitResponse = {
-    commit: {
-        committer: {
-            name: string,
-            email: string,
-            date: string
-        }
-    },
-    html_url: string
-}
+import type { CommitResponse } from "$lib/index"
 
 const commitIdRegex = /([a-f0-9]{40})$/
 const apiEndpoint = "https://api.github.com/repos/connellr023/cr023/commits/main"

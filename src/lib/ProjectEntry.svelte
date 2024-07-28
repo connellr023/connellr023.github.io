@@ -1,5 +1,6 @@
 <script lang="ts">
 import Graph from "./Graph.svelte"
+import type { GraphData } from "$lib/index"
 
 export let isPrivate: boolean
 export let name: string
