@@ -31,7 +31,14 @@ import "../styles/global.scss"
                 isPrivate={true}
                 name="Oncology Quest"
                 description="A web app architected to aid Medical Oncology trainees and rotation directors."
-                stack={["Rust", "PgSQL", "Vue.js", "AWS", "Docker"]}
+                stack={["Rust", "Actix Web", "SQLx", "PostgreSQL", "Vue.js", "AWS ECS", "Docker"]}
+                languageData={[
+                  ["Rust", "rust", 44],
+                  ["Vue", "vue", 32],
+                  ["TS", "ts", 17],
+                  ["SCSS", "scss", 5],
+                  ["Docker", "docker", 2]
+                ]}
             />
         </div>
 
@@ -43,6 +50,12 @@ import "../styles/global.scss"
                 name="Chatter Reborn"
                 description="A massively concurrent chat application architected for real-time, one-on-one conversations."
                 stack={["Gleam/Erlang", "React", "Docker"]}
+                languageData={[
+                  ["Gleam", "gleam", 52],
+                  ["TS", "ts", 29],
+                  ["SCSS", "scss", 12],
+                  ["Docker", "docker", 7]
+                ]}
             />
         </div>
         <div>
@@ -51,6 +64,11 @@ import "../styles/global.scss"
                 name="Chatter"
                 description="A web application designed for real-time, conversations within global chat rooms."
                 stack={["Vue.js", "Node.js", "Socket.io"]}
+                languageData={[
+                  ["TS", "ts", 80],
+                  ["SCSS", "scss", 9],
+                  ["Vue", "vue", 11]
+                ]}
             />
         </div>
         <div>
@@ -59,6 +77,10 @@ import "../styles/global.scss"
                 name="tensort"
                 description="A CLI tool that utilizes a ResNet convolutional neural network to recognize content in images and sort them into classes."
                 stack={["Rust", "Libtorch", "Docker"]}
+                languageData={[
+                  ["Rust", "rust", 96],
+                  ["Docker", "docker", 4]
+                ]}
             />
         </div>
         <div>
@@ -67,6 +89,7 @@ import "../styles/global.scss"
                 name="gratis"
                 description="A lightweight framework for developing REST-like APIs in PHP."
                 stack={["PHP", "PHPUnit", "Composer"]}
+                languageData={[["PHP", "php", 100]]}
             />
         </div>
 
@@ -78,6 +101,10 @@ import "../styles/global.scss"
                 name="SNESK"
                 description="An implementation of the classic snake game that runs on a bare metal Rapberry Pi 4 with a SNES controller."
                 stack={["C"]}
+                languageData={[
+                  ["C", "c", 97],
+                  ["Assembly", "asm", 3]
+                ]}
             />
         </div>
     </div>
@@ -89,9 +116,11 @@ import "../styles/global.scss"
 
 main {
     $horizontal-margin: 20px;
-    $vertical-margin: 50px;
 
-    margin: $vertical-margin $horizontal-margin;
+    margin-left: $horizontal-margin;
+    margin-right: $horizontal-margin;
+    margin-top: 50px;
+    margin-bottom: 80px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -120,6 +149,6 @@ div.carousel-container {
 }
 
 p.intro {
-    margin-top: 0.8rem;
+    margin-top: 1rem;
 }
 </style>

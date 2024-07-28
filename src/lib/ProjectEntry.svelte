@@ -1,11 +1,14 @@
 <script lang="ts">
+import Graph from "./Graph.svelte"
+
 export let isPrivate: boolean
 export let name: string
 export let description: string
 export let stack: string[]
+export let languageData: GraphData[] = []
 </script>
 
-<a class="container left-bar red" href="">
+<a class="container left-bar red" draggable={false} href="">
     <h3>
         <span class="token-red">{isPrivate ? "private" : "public"}</span>
         <span class="name">{name}</span>
@@ -14,6 +17,7 @@ export let stack: string[]
 </a>
 <p class="left-bar">{description}</p>
 <p class="left-bar comment">{stack.join(", ")}</p>
+<Graph data={languageData} />
 
 <style lang="scss">
 @import "../styles/variables.scss";
@@ -38,7 +42,6 @@ a.container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     transition: all $transition;
     text-decoration: none;
 
@@ -85,6 +88,7 @@ span.arrow {
 p.comment {
     color: $gruvbox-grey-2;
     border-color: $gruvbox-grey-2;
+    padding-bottom: 0.3rem;
 
     $dist: 0.5rem;
 

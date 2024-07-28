@@ -82,7 +82,7 @@ footer {
     left: 0;
 }
 
-@media (max-width: $mobile-breakpoint) {
+@media (max-width: 800px) {
     span.divider {
         display: none;
     }
