@@ -8,6 +8,7 @@ import "../../../styles/global.scss"
 <ProjectPage
     title="Oncology Quest"
     stack={["Rust", "Actix Web", "SQLx", "PostgreSQL", "Vue.js", "AWS ECS", "Docker"]}
+    deployment={["aws/oncologyquest.net", "https://www.oncologyquest.net/"]}
 >
     <p class="left-bar">hello</p>
 </ProjectPage>
