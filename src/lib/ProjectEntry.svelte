@@ -7,95 +7,31 @@ export let name: string
 export let description: string
 export let stack: string[]
 export let languageData: GraphData[] = []
+export let href: string = ""
 </script>
 
-<a class="container left-bar red" draggable={false} href="">
+<a class="container left-bar red" draggable={false} href={href}>
     <h3>
         <span class="token-red">{isPrivate ? "private" : "public"}</span>
-        <span class="name">{name}</span>
+        <span class="underline string">{name}</span>
     </h3>
 </a>
 <p class="left-bar">{description}</p>
-<p class="left-bar comment">{stack.join(", ")}</p>
+<p class="left-bar stack comment">{stack.join(", ")}</p>
 <Graph data={languageData} />
 
 <style lang="scss">
 @import "../styles/variables.scss";
 
-$transition: 0.07s ease;
-
-a.container {
-    $border-radius: 0.4rem;
-    $vertical-padding: 0.25rem;
-    $border: 1px solid transparent;
-
-    margin-top: 2rem;
-    cursor: pointer;
-    border-bottom: $border;
-    border-top: $border;
-    border-right: $border;
-    padding-top: $vertical-padding;
-    padding-bottom: $vertical-padding;
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: all $transition;
-    text-decoration: none;
-
-    &:hover {
-        border-right-color: $gruvbox-grey-2;
-        border-top-color: $gruvbox-grey-2;
-        border-bottom-color: $gruvbox-grey-2;
-        background-color: $gruvbox-grey-1;
-
-        & > h3 > span.name {
-            text-decoration: underline;
-        }
-    }
-}
-
 h3 {
     font-weight: normal;
     margin: 0;
     flex-grow: 1;
-    transition: transform $transition;
     position: relative;
-
-    span.name {
-        color: $gruvbox-lime;
-
-        &:before,
-        &:after {
-            content: "\"";
-        }
-    }
 }
 
-span.arrow {
-    opacity: 0;
-    transition: opacity $transition;
-    color: $gruvbox-grey-2;
-    margin-left: 0.3rem;
-}
-
-p.comment {
-    color: $gruvbox-grey-2;
-    border-color: $gruvbox-grey-2;
+p.stack {
     padding-bottom: 0.3rem;
-
-    $dist: 0.5rem;
-
-    &:before {
-        content: "/\*";
-        margin-right: $dist;
-    }
-
-    &:after {
-        content: "\*/";
-        margin-left: $dist;
-    }
+    border-color: $gruvbox-grey-2;
 }
 </style>

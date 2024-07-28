@@ -29,6 +29,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={true}
+                href="/projects/oncology-quest"
                 name="Oncology Quest"
                 description="A web app architected to aid Medical Oncology trainees and rotation directors."
                 stack={["Rust", "Actix Web", "SQLx", "PostgreSQL", "Vue.js", "AWS ECS", "Docker"]}
@@ -135,36 +136,6 @@ import "../styles/global.scss"
 
 <style lang="scss">
 @import "../styles/variables.scss";
-
-main {
-    $horizontal-margin: 20px;
-
-    margin-left: $horizontal-margin;
-    margin-right: $horizontal-margin;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-    font-weight: normal;
-}
-
-div.content-container {
-    @include fade-transform(
-        $transform: translateY(1.3rem),
-        $children: 20,
-        $anim-delay: 0.1s,
-        $delay-step: 0.13s,
-        $anim-id: 3
-    );
-
-    max-width: 800px;
-}
 
 div.carousel-container {
     margin-top: 1rem;

@@ -29,12 +29,12 @@ onMount(() => {
         <span class="token-green hide-token">{"="}</span>
         <span class="token-yellow qualifier-after">Licenses</span><a class="token-yellow" href="https://opensource.org/license/mit" target="_blank">MIT</a>{";"}
     </span>
-    <span class="divider">{"/* 2024 */"}</span>
+    <span class="divider">&copy 2024</span>
     <span class="commit">
         <span class="token-red hide-token">let</span>
         <span class="hide-token">commit</span>
         <span class="token-green hide-token">{"="}</span>
-        {#if commit === null}
+        {#if !commit}
             <span class="token-yellow">None</span>{";"}
         {:else}
             <span class="token-yellow">Some</span>{"("}<a class="token-pink" href={commit.html_url} target="_blank">{commitIdString}</a>{");"}

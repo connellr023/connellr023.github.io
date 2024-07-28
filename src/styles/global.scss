@@ -28,6 +28,62 @@ p {
     }
 }
 
+main {
+    $horizontal-margin: 20px;
+
+    margin-left: $horizontal-margin;
+    margin-right: $horizontal-margin;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+div.content-container {
+    @include fade-transform(
+        $transform: translateY(1.3rem),
+        $children: 20,
+        $anim-delay: 0.1s,
+        $delay-step: 0.13s,
+        $anim-id: 3
+    );
+
+    width: 100%;
+    max-width: 800px;
+}
+
+.string {
+    color: $gruvbox-lime;
+
+    &:before,
+    &:after {
+        content: "\"";
+    }
+}
+
+.comment {
+    color: $gruvbox-grey-2;
+
+    $dist: 0.5rem;
+
+    &:before {
+        content: "/\*";
+        margin-right: $dist;
+    }
+
+    &:after {
+        content: "\*/";
+        margin-left: $dist;
+    }
+}
+
 .left-bar {
     border-left: 2px solid $gruvbox-white;
     padding-left: 0.7rem;
@@ -38,6 +94,10 @@ p {
 
     &.red {
         border-color: $gruvbox-red;
+    }
+
+    &.yellow {
+        border-color: $gruvbox-yellow;
     }
 
     & + p {
@@ -65,4 +125,37 @@ p {
 
 .token-pink {
     color: $gruvbox-pink;
+}
+
+a.container {
+    $border-radius: 0.4rem;
+    $vertical-padding: 0.25rem;
+    $border: 1px solid transparent;
+
+    margin-top: 2rem;
+    cursor: pointer;
+    border-bottom: $border !important;
+    border-top: $border !important;
+    border-right: $border !important;
+    padding-top: $vertical-padding;
+    padding-bottom: $vertical-padding;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.08s ease;
+    text-decoration: none;
+
+    &:hover {
+        border-right-color: $gruvbox-grey-2 !important;
+        border-top-color: $gruvbox-grey-2 !important;
+        border-bottom-color: $gruvbox-grey-2 !important;
+        background-color: $gruvbox-grey-1;
+
+        & .underline {
+            text-decoration: underline;
+        }
+    }
 }
