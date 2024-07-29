@@ -103,6 +103,7 @@ a.container {
     }
 
     span.divider {
+        user-select: none;
         color: $gruvbox-white;
         margin: 0 0.5rem;
         font-size: $font-size;
