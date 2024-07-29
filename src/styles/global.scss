@@ -63,7 +63,7 @@ div.content-container {
         $transform: translateY(1.3rem),
         $children: 20,
         $anim-delay: 0.1s,
-        $delay-step: 0.13s,
+        $delay-step: 0.1s,
         $anim-id: 3
     );
 
@@ -84,6 +84,17 @@ div.contact-container {
 
         display: flex;
         flex-direction: column;
+    }
+}
+
+div.image-container {
+    margin-top: 1rem;
+
+    & > img {
+        border-radius: 0.3rem;
+        border: 1px solid $gruvbox-grey-2;
+        margin-bottom: 0.5rem;
+        width: 100%;
     }
 }
 
