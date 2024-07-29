@@ -10,7 +10,7 @@ import LinkedIn from "./vector/LinkedIn.svelte"
         <h1><TypeWriter text="connell_reffo" /></h1>
         <ul>
             <li>student</li>
-            <li>builder</li>
+            <li>designer</li>
             <li>web_developer</li>
         </ul>
     </div>
@@ -37,12 +37,6 @@ h1 {
     margin: 0;
     margin-bottom: 0.1rem;
     font-size: 1.6rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 div.container {
@@ -78,19 +72,5 @@ div.name-container {
             }
         }
     }
-}
-
-div.contact-container > ul {
-    @include fade-transform(
-        $transform: translateX(1.3rem),
-        $children: 2,
-        $duration: 0.6s,
-        $delay-step: 0.2s,
-        $anim-delay: 0.1s,
-        $anim-id: 2
-    );
-
-    display: flex;
-    flex-direction: column;
 }
 </style>

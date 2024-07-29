@@ -1,52 +1,105 @@
 <script lang="ts">
+import SocialLink from "$lib/SocialLink.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
+import Github from "$lib/vector/GitHub.svelte"
+import Docker from "$lib/vector/Docker.svelte"
+
+const defaultContributer = "Connell Reffo"
 
 export let title: string
-export let stack: string[] = []
 export let deployment: [string, string] | null = null
+export let repository: [string, string] | null = null
+export let extraContributers: string[] = []
 </script>
 
 <main>
-    <div class="content-container">
-        <div class="title-container">
-            <a class="left-bar yellow container" href="/">
-                <span class="back underline">projects</span>
-                <span class="divider">/</span>
-                <h1>
-                    <TypeWriter text={title} />
-                </h1>
-            </a>
-            <p class="left-bar stack comment">{stack.join(", ")}</p>
-            {#if deployment}
-                <div class="left-bar green extra-link">
-                    <a target="_blank" href={deployment[1]}>{deployment[0]}</a>
+    <div class="title-container">
+        <div class="name-container column">
+            <a class="container" href="/" draggable={false}>
+                <div class="column">
+                    <div class="row">
+                        <span class="back underline left-bar yellow">projects</span>
+                        <span class="divider">{"/"}</span>
+                    </div>
+                    <h1 class="left-bar">
+                        <TypeWriter text={title} />
+                    </h1>
                 </div>
-            {/if}
+            </a>
+            <p class="left-bar comment contributers">{[defaultContributer, ...extraContributers].join(", ")}</p>
         </div>
-        <div class="project-info-container">
-            <slot></slot>
+        <div class="contact-container column">
+            <ul>
+                {#if deployment}
+                    <li>
+                        <SocialLink link={deployment[1]} linkText={deployment[0]}>
+                            <Docker />
+                        </SocialLink>
+                    </li>
+                {/if}
+                {#if repository}
+                    <li>
+                        <SocialLink link={repository[1]} linkText={repository[0]}>
+                            <Github />
+                        </SocialLink>
+                    </li>
+                {/if}
+            </ul>
         </div>
+    </div>
+    <div class="content-container">
+        <slot></slot>
     </div>
 </main>
 
 <style lang="scss">
 @import "../styles/variables.scss";
 
+div.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content-width;
+    margin-bottom: 0.5rem;
+
+    div.name-container {
+        flex-grow: 1;
+    }
+}
+
+div.name-container {
+    @include fade-transform(
+        $transform: translateX(-1.3rem),
+        $children: 3,
+        $anim-id: 6
+    );
+}
+
 a.container {
     $font-size: 1.4rem;
+
+    margin: 0;
+    padding: 0;
 
     h1 {
         display: flex;
         flex-direction: row;
         color: $gruvbox-white;
         font-size: $font-size;
+        white-space: nowrap;
         margin: 0;
+        padding-bottom: 0.3rem;
+        padding-right: 0.6rem;
     }
 
     span.back {
         color: $gruvbox-yellow;
         font-size: $font-size;
         font-weight: 500;
+        padding-top: 0.2rem;
+        padding-bottom: 0.3rem;
     }
 
     span.divider {
@@ -56,27 +109,8 @@ a.container {
     }
 }
 
-div.extra-link {
-    $vertical-padding: 0.25rem;
-
-    padding-top: $vertical-padding;
-    padding-bottom: $vertical-padding;
-
-    & > a {
-        text-decoration: none;
-        color: $gruvbox-green;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-p.stack {
+p.contributers {
   border-color: $gruvbox-grey-2;
-}
-
-div.project-info-container {
-    margin-top: 2rem;
+  padding-top: 0.2rem;
 }
 </style>

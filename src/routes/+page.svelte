@@ -2,7 +2,6 @@
 import Greeting from "$lib/Greeting.svelte"
 import Footer from "$lib/Footer.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
-import SectionTitle from "$lib/SectionTitle.svelte"
 import TechCarousel from "$lib/TechCarousel.svelte"
 import ProjectEntry from "$lib/ProjectEntry.svelte"
 
@@ -18,13 +17,13 @@ import "../styles/global.scss"
             Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
         </p>
 
-        <h2 class="left-bar pink"><SectionTitle title="technologies" /></h2>
+        <h2 class="left-bar">technologies</h2>
         <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
         <div class="carousel-container">
             <TechCarousel />
         </div>
 
-        <h2 class="left-bar pink"><SectionTitle title="main_projects" /></h2>
+        <h2 class="left-bar">main_projects</h2>
         <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
         <div>
             <ProjectEntry
@@ -43,7 +42,7 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 class="left-bar pink"><SectionTitle title="learning_projects" /></h2>
+        <h2 class="left-bar">learning_projects</h2>
         <p class="left-bar">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
         <div>
             <ProjectEntry
@@ -107,7 +106,7 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 class="left-bar pink"><SectionTitle title="school_projects" /></h2>
+        <h2 class="left-bar">school_projects</h2>
         <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
         <div>
             <ProjectEntry
