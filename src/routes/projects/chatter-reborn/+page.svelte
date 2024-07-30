@@ -11,8 +11,8 @@ import "../../../styles/global.scss"
     deployment={["chatter-5dkr.onrender.com", "https://chatter-5dkr.onrender.com"]}
     repository={["connellr023/chatter-reborn", "https://github.com/connellr023/chatter-reborn"]}
 >
-    <h2 class="left-bar">overview</h2>
-    <p class="left-bar">
+    <h2 class="left-bar fade-in">overview</h2>
+    <p class="left-bar fade-in">
 
     </p>
 </ProjectPage>

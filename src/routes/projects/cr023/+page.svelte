@@ -10,8 +10,8 @@ import "../../../styles/global.scss"
     category="learning_projects"
     repository={["connellr023/cr023", "https://github.com/connellr023/cr023"]}
 >
-    <h2 class="left-bar">overview</h2>
-    <p class="left-bar">
+    <h2 class="left-bar fade-in">overview</h2>
+    <p class="left-bar fade-in">
 
     </p>
 </ProjectPage>

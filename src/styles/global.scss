@@ -63,14 +63,6 @@ ul {
 }
 
 div.content-container {
-    @include fade-transform(
-        $transform: translateY(1.3rem),
-        $children: 20,
-        $anim-delay: 0.1s,
-        $delay-step: 0.1s,
-        $anim-id: 3
-    );
-
     width: 100%;
     max-width: $max-content-width;
 }
@@ -192,6 +184,17 @@ div.row {
         $delay-step: 0.07s,
         $anim-id: 4
     );
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition: all 0.6s ease;
+
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 a.container {

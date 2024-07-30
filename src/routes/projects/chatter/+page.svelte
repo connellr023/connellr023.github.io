@@ -11,8 +11,8 @@ import "../../../styles/global.scss"
     deployment={["chatter-lqqb.onrender.com", "https://chatter-lqqb.onrender.com"]}
     repository={["connellr023/Chatter", "https://github.com/connellr023/Chatter"]}
 >
-    <h2 class="left-bar">overview</h2>
-    <p class="left-bar">
+    <h2 class="left-bar fade-in">overview</h2>
+    <p class="left-bar fade-in">
 
     </p>
 </ProjectPage>

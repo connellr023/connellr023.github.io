@@ -1,4 +1,5 @@
 <script>
+import Main from "$lib/Main.svelte"
 import Header from "$lib/Header.svelte"
 import Footer from "$lib/Footer.svelte"
 import Greeting from "$lib/Greeting.svelte"
@@ -10,24 +11,24 @@ import "../styles/global.scss"
 </script>
 
 <Header />
-<main>
+<Main>
     <Greeting />
     <div class="content-container">
-        <p class="left-bar intro">
+        <p class="left-bar intro fade-in">
             Hey, I'm Connell, a <i>Computer Science</i> student at the <i>University of Calgary</i>.
             I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
             Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
         </p>
 
-        <h2 class="left-bar">technologies</h2>
-        <p class="left-bar">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
-        <div class="carousel-container">
+        <h2 class="left-bar fade-in">technologies</h2>
+        <p class="left-bar fade-in">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
+        <div class="carousel-container fade-in">
             <TechCarousel />
         </div>
 
-        <h2 id="main-projects" class="left-bar">main_projects</h2>
-        <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
-        <div>
+        <h2 id="main-projects" class="left-bar fade-in">main_projects</h2>
+        <p class="left-bar fade-in">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={true}
                 href="/projects/oncology-quest"
@@ -44,9 +45,9 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 id="learning-projects" class="left-bar">learning_projects</h2>
-        <p class="left-bar">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
-        <div>
+        <h2 id="learning-projects" class="left-bar fade-in">learning_projects</h2>
+        <p class="left-bar fade-in">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/chatter-reborn"
@@ -61,7 +62,7 @@ import "../styles/global.scss"
                 ]}
             />
         </div>
-        <div>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/chatter"
@@ -75,7 +76,7 @@ import "../styles/global.scss"
                 ]}
             />
         </div>
-        <div>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/tensort"
@@ -88,7 +89,7 @@ import "../styles/global.scss"
                 ]}
             />
         </div>
-        <div>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/gratis"
@@ -98,7 +99,7 @@ import "../styles/global.scss"
                 languageData={[["PHP", "php", 100]]}
             />
         </div>
-        <div>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/cr023"
@@ -113,9 +114,9 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 id="school-projects" class="left-bar">school_projects</h2>
-        <p class="left-bar">These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
-        <div>
+        <h2 id="school-projects" class="left-bar fade-in">school_projects</h2>
+        <p class="left-bar fade-in">These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={true}
                 href="/projects/snesk"
@@ -128,7 +129,7 @@ import "../styles/global.scss"
                 ]}
             />
         </div>
-        <div>
+        <div class="fade-in">
             <ProjectEntry
                 isPrivate={true}
                 href="/projects/self-checkout-station"
@@ -139,7 +140,7 @@ import "../styles/global.scss"
             />
         </div>
     </div>
-</main>
+</Main>
 <Footer />
 
 <style lang="scss">
