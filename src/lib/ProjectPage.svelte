@@ -9,6 +9,7 @@ import Docker from "$lib/vector/Docker.svelte"
 const defaultContributer = "Connell Reffo"
 
 export let title: string
+export let category: "main_projects" | "learning_projects" | "school_projects"
 export let deployment: [string, string] | null = null
 export let repository: [string, string] | null = null
 export let extraContributers: string[] = []
@@ -28,7 +29,7 @@ onMount(() => {
             <a class="container" href="/" draggable={false}>
                 <div class="column">
                     <div class="row">
-                        <span class="back underline left-bar yellow">projects</span>
+                        <span class="back underline left-bar yellow">{category}</span>
                         <span class="divider">{"/"}</span>
                     </div>
                     <h1 class="left-bar">

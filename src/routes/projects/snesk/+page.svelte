@@ -5,7 +5,7 @@ import Footer from "$lib/Footer.svelte"
 import "../../../styles/global.scss"
 </script>
 
-<ProjectPage title="SNESK" extraContributers={["Hillary Nguyen"]}>
+<ProjectPage title="SNESK" category="school_projects" extraContributers={["Hillary Nguyen"]}>
     <h2 class="left-bar">overview</h2>
     <p class="left-bar">
         <i>SNESK</i> is a re-implementation of snake with additions required for an assignment in the course <b>CPSC 359</b>.

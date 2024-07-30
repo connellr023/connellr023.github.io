@@ -5,7 +5,7 @@ import Footer from "$lib/Footer.svelte"
 import "../../../styles/global.scss"
 </script>
 
-<ProjectPage title="Oncology Quest" deployment={["oncologyquest.net", "https://www.oncologyquest.net/"]}>
+<ProjectPage title="Oncology Quest" category="main_projects" deployment={["oncologyquest.net", "https://www.oncologyquest.net/"]}>
     <h2 class="left-bar">overview</h2>
     <p class="left-bar">
         <i>Oncology Quest</i> is a web app designed to support Medical Oncology trainees by tracking their progress throughout

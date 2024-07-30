@@ -109,7 +109,7 @@ import "../styles/global.scss"
         </div>
 
         <h2 id="school-projects" class="left-bar">school_projects</h2>
-        <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
+        <p class="left-bar">These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
         <div>
             <ProjectEntry
                 isPrivate={true}
