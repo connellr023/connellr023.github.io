@@ -1,9 +1,9 @@
 <header>
     <nav>
         <ul class="fade-down">
-            <li><a draggable={false} href="#main-projects">main_projects</a></li>
-            <li><a draggable={false} href="#learning-projects">learning_projects</a></li>
-            <li><a draggable={false} href="#school-projects">school_projects</a></li>
+            <li><a draggable={false} href="#main_projects">main_projects</a></li>
+            <li><a draggable={false} href="#learning_projects">learning_projects</a></li>
+            <li><a draggable={false} href="#school_projects">school_projects</a></li>
         </ul>
     </nav>
 </header>

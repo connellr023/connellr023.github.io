@@ -18,11 +18,11 @@ onMount(() => {
         observer.observe(section)
     })
 
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "instant"
-    })
+    // window.scroll({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: "instant"
+    // })
 })
 </script>
 

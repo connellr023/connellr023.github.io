@@ -19,7 +19,7 @@ export let extraContributers: string[] = []
 <Main>
     <div class="title-container">
         <div class="name-container column">
-            <a class="container" href="/" draggable={false}>
+            <a class="container" href={`/#${category}`} draggable={false}>
                 <div class="column">
                     <div class="row">
                         <span class="back underline left-bar yellow">{category}</span>

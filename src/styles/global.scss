@@ -5,10 +5,6 @@
     font-size: clamp(17px, 2.8lvw, 21px);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: $gruvbox-black;
     color: $gruvbox-white;
@@ -189,7 +185,7 @@ div.row {
 .fade-in {
     opacity: 0;
     transform: translateY(1.5rem);
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 
     &.appear {
         opacity: 1;

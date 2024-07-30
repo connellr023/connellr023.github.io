@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+import { onMount, onDestroy, afterUpdate } from "svelte"
+import { browser } from "$app/environment"
+
 import Main from "$lib/Main.svelte"
 import Header from "$lib/Header.svelte"
 import Footer from "$lib/Footer.svelte"
@@ -8,6 +11,33 @@ import TechCarousel from "$lib/TechCarousel.svelte"
 import ProjectEntry from "$lib/ProjectEntry.svelte"
 
 import "../styles/global.scss"
+
+if (browser) {
+  const scrollToCategory = (category: string) => {
+      const element = document.getElementById(category)
+      element?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const onHashChanged = () => {
+      const hash = window.location.hash
+
+      if (hash) {
+          const category = hash.slice(1)
+          scrollToCategory(category)
+      }
+  }
+
+  onMount(() => {
+      window.onload = () => { window.location.hash = "" }
+      window.addEventListener("hashchange", onHashChanged)
+
+      onHashChanged()
+  })
+
+  onDestroy(() => {
+      window.removeEventListener("hashchange", onHashChanged)
+  })
+}
 </script>
 
 <Header />
@@ -26,7 +56,7 @@ import "../styles/global.scss"
             <TechCarousel />
         </div>
 
-        <h2 id="main-projects" class="left-bar fade-in">main_projects</h2>
+        <h2 id="main_projects" class="left-bar fade-in">main_projects</h2>
         <p class="left-bar fade-in">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
         <div class="fade-in">
             <ProjectEntry
@@ -45,7 +75,7 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 id="learning-projects" class="left-bar fade-in">learning_projects</h2>
+        <h2 id="learning_projects" class="left-bar fade-in">learning_projects</h2>
         <p class="left-bar fade-in">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
         <div class="fade-in">
             <ProjectEntry
@@ -114,7 +144,7 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 id="school-projects" class="left-bar fade-in">school_projects</h2>
+        <h2 id="school_projects" class="left-bar fade-in">school_projects</h2>
         <p class="left-bar fade-in">These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
         <div class="fade-in">
             <ProjectEntry
