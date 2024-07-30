@@ -5,6 +5,10 @@
     font-size: clamp(17px, 2.8lvw, 21px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $gruvbox-black;
     color: $gruvbox-white;
@@ -178,6 +182,16 @@ div.row {
 
 .token-pink {
     color: $gruvbox-pink;
+}
+
+.fade-down {
+    @include fade-transform(
+        $transform: translateY(-1.3rem),
+        $children: 10,
+        $anim-delay: 0.4s,
+        $delay-step: 0.07s,
+        $anim-id: 4
+    );
 }
 
 a.container {

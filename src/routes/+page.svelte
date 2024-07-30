@@ -1,6 +1,7 @@
 <script>
-import Greeting from "$lib/Greeting.svelte"
+import Header from "$lib/Header.svelte"
 import Footer from "$lib/Footer.svelte"
+import Greeting from "$lib/Greeting.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import TechCarousel from "$lib/TechCarousel.svelte"
 import ProjectEntry from "$lib/ProjectEntry.svelte"
@@ -8,6 +9,7 @@ import ProjectEntry from "$lib/ProjectEntry.svelte"
 import "../styles/global.scss"
 </script>
 
+<Header />
 <main>
     <Greeting />
     <div class="content-container">
@@ -23,7 +25,7 @@ import "../styles/global.scss"
             <TechCarousel />
         </div>
 
-        <h2 class="left-bar">main_projects</h2>
+        <h2 id="main-projects" class="left-bar">main_projects</h2>
         <p class="left-bar">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
         <div>
             <ProjectEntry
@@ -42,7 +44,7 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 class="left-bar">learning_projects</h2>
+        <h2 id="learning-projects" class="left-bar">learning_projects</h2>
         <p class="left-bar">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
         <div>
             <ProjectEntry
@@ -106,11 +108,12 @@ import "../styles/global.scss"
             />
         </div>
 
-        <h2 class="left-bar">school_projects</h2>
+        <h2 id="school-projects" class="left-bar">school_projects</h2>
         <p class="left-bar">These are <i>some</i> of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
         <div>
             <ProjectEntry
                 isPrivate={true}
+                href="/projects/snesk"
                 name="SNESK"
                 description="A re-implementation of snake that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
                 stack={["C", "Raspberry Pi 4"]}
@@ -123,6 +126,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={true}
+                href="/projects/self-checkout-station"
                 name="Self-Checkout Station Control Software"
                 description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
                 stack={["Java, JUnit", "Swing"]}
@@ -141,6 +145,6 @@ div.carousel-container {
 }
 
 p.intro {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 </style>

@@ -1,4 +1,6 @@
 <script lang="ts">
+import { onMount } from "svelte"
+
 import SocialLink from "$lib/SocialLink.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import Github from "$lib/vector/GitHub.svelte"
@@ -10,6 +12,14 @@ export let title: string
 export let deployment: [string, string] | null = null
 export let repository: [string, string] | null = null
 export let extraContributers: string[] = []
+
+onMount(() => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "instant"
+  })
+})
 </script>
 
 <main>

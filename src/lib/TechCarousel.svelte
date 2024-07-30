@@ -11,7 +11,7 @@ import Postgres from "./vector/Postgres.svelte"
 import Docker from "./vector/Docker.svelte"
 </script>
 
-<ul>
+<ul class="fade-down">
     <li>
         <div>
             <Typescript />
@@ -78,14 +78,6 @@ import Docker from "./vector/Docker.svelte"
 @import "../styles/variables.scss";
 
 ul {
-    @include fade-transform(
-        $transform: translateY(-1.3rem),
-        $children: 10,
-        $anim-delay: 0.4s,
-        $delay-step: 0.07s,
-        $anim-id: 4
-    );
-
     list-style-type: none;
     padding: 0;
     margin: 0;
