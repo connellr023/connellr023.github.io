@@ -50,8 +50,8 @@ import "../../../styles/global.scss"
         <i>Surgical re-rendering</i> was used to only update the parts of the screen that changed.
     </p>
     <p class="left-bar">
-        <i>Custom font-engine</i> was created to render text on the screen. Every character is hardcoded as an 8x8 byte array.
-        However, this representation of characters could have been improved by using a 64-bit integer to represent each character instead.
+        <i>Custom font/sprite engine</i> was created to render text on the screen. Every character (and sprite) is hardcoded as an 8x8 byte array.
+        However, this representation of characters could have been improved by using a single 64-bit integer to represent each character instead.
     </p>
     <p class="left-bar">
         <i>Event loop</i> was used to handle input from the SNES controller, update the game state, and render the game to make the game feel responsive.

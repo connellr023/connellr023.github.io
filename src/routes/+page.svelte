@@ -49,6 +49,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
+                href="/projects/chatter-reborn"
                 name="Chatter Reborn"
                 description="A massively concurrent chat application architected for real-time, one-on-one conversations."
                 stack={["Gleam", "Gleeunit", "React", "Docker"]}
@@ -63,6 +64,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
+                href="/projects/chatter"
                 name="Chatter"
                 description="A web application designed for real-time, conversations within global chat rooms."
                 stack={["Vue.js", "Vitest", "Jest", "Node.js", "Socket.io"]}
@@ -76,6 +78,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
+                href="/projects/tensort"
                 name="tensort"
                 description="A CLI tool that utilizes a ResNet convolutional neural network to recognize content in images and sort them into classes."
                 stack={["Rust", "Libtorch", "Docker"]}
@@ -88,6 +91,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
+                href="/projects/gratis"
                 name="gratis"
                 description="A lightweight framework for developing REST-like APIs in PHP."
                 stack={["PHP", "PHPUnit", "Composer"]}
@@ -97,6 +101,7 @@ import "../styles/global.scss"
         <div>
             <ProjectEntry
                 isPrivate={false}
+                href="/projects/cr023"
                 name="cr023"
                 description="My portfolio website which you are currently viewing!"
                 stack={["SvelteKit", "Typescript"]}
