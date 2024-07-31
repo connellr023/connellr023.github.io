@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -70,4 +69,3 @@ import "../../../styles/global.scss"
         <img class="fade-in" src="/images/oncology-quest/6.png" alt="Rotation Director Trainee Progress" />
     </div>
 </ProjectPage>
-<Footer />

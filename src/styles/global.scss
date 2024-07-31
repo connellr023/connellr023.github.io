@@ -44,7 +44,6 @@ main {
 
     margin-left: $horizontal-margin;
     margin-right: $horizontal-margin;
-    margin-top: 50px;
     margin-bottom: 80px;
     display: flex;
     align-items: center;
@@ -83,6 +82,9 @@ div.logo-container {
 
 div.contact-container {
     & > ul {
+        display: flex;
+        flex-direction: column;
+
         @include fade-transform(
             $transform: translateX(1.3rem),
             $children: 2,
@@ -91,9 +93,6 @@ div.contact-container {
             $anim-delay: 0.1s,
             $anim-id: 2
         );
-
-        display: flex;
-        flex-direction: column;
     }
 }
 

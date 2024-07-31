@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -17,4 +16,3 @@ import "../../../styles/global.scss"
         I made it with <b>SvelteKit</b> and <b>SCSS</b> which are really great tools and I would recommend them to anyone.
     </p>
 </ProjectPage>
-<Footer />

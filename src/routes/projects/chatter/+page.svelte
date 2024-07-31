@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -52,4 +51,3 @@ import "../../../styles/global.scss"
         <img class="fade-in" src="/images/chatter/4.png" alt="Chatter error view" />
     </div>
 </ProjectPage>
-<Footer />

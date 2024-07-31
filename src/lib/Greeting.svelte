@@ -46,17 +46,11 @@ div.container {
     gap: 3rem;
     width: 100%;
     max-width: 30rem;
+    margin-top: 2.3rem;
 }
 
 div.name-container {
     ul {
-        @include fade-transform(
-            $transform: translateX(-1.3rem),
-            $children: 3,
-            $anim-delay: 0.2s,
-            $anim-id: 1
-        );
-
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
@@ -71,6 +65,13 @@ div.name-container {
                 margin-right: 0.5rem;
             }
         }
+
+        @include fade-transform(
+            $transform: translateX(-1.3rem),
+            $children: 3,
+            $anim-delay: 0.2s,
+            $anim-id: 1
+        );
     }
 }
 </style>

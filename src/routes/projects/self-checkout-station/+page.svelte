@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -34,8 +33,7 @@ import "../../../styles/global.scss"
     <h2 class="left-bar fade-in">overview</h2>
     <p class="left-bar fade-in">
         This was created as the final iteration of developing <i>Self Checkout Station</i> control software for the course <b>SENG 300</b>.
-        It was essentially a <b>GUI</b> wrapper around a hardware simulation <b>API</b> that was provided to us.
-        The software had to meet a set of requirements that were given to each group by the client (The professor - Mr. Customer).
+        The software had to meet a set of requirements, including a <b>GUI</b> that were given to each group by the client (The professor - Mr. Customer).
     </p>
 
     <h2 class="left-bar fade-in">relevance</h2>
@@ -48,13 +46,14 @@ import "../../../styles/global.scss"
 
     <h2 class="left-bar fade-in">highlights</h2>
     <p class="left-bar fade-in">
-        I was fortunate enough to have a driven team that was able to work together to deliver a product that met the requirements.
+        I was fortunate enough to have a driven team (Group #2) that was able to work together to deliver a product that met the requirements.
         Not only did it meet the requirements, but it was the only demonstration that did not have any bugs!
+        I can confirm because I watched them all.
     </p>
 
     <h2 class="left-bar fade-in">architecture</h2>
     <p class="left-bar fade-in">
-        The software followed the <b>MVC</b> where observers provided by the <b>API</b> would notify the <b>controller</b> which would then update the <b>model</b> which would then update the <b>view</b>.
+        The software followed the <b>MVC</b> architecture where observers provided by the <b>API</b> would notify the <b>controllers</b> which would then update the <b>model</b> and in turn update the <b>view</b>.
         This design allowed work to be split up between team members and allowed for a more modular approach to development.
         However, this design led to high coupling which could have been improved by using the <b>Observer Pattern</b>.
     </p>
@@ -72,4 +71,3 @@ import "../../../styles/global.scss"
         <img class="fade-in" src="/images/self-checkout-station/6.png" alt="Self Checkout Station payment" />
     </div>
 </ProjectPage>
-<Footer />

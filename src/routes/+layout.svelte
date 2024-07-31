@@ -1,7 +1,9 @@
 <script lang="ts">
-import { onMount } from "svelte"
+import { afterUpdate } from "svelte"
 
-onMount(() => {
+import Footer from "$lib/Footer.svelte"
+
+afterUpdate(() => {
     const sections = document.querySelectorAll(".fade-in")
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -28,3 +30,4 @@ onMount(() => {
 <main>
     <slot></slot>
 </main>
+<Footer />

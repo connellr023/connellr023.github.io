@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -47,15 +46,16 @@ import "../../../styles/global.scss"
         The snake was able to grow by simply not moving the tail index.
     </p>
     <p class="left-bar fade-in">
-        <i>Surgical re-rendering</i> was used to only update the parts of the screen that changed.
+        <i>Surgical re-rendering</i> was implemented to only update the parts of the screen that changed.
+        This was straightforward since Snake operates on a grid and only a few cells change each frame.
     </p>
     <p class="left-bar fade-in">
         <i>Custom font/sprite engine</i> was created to render text on the screen. Every character (and sprite) is hardcoded as an 8x8 byte array.
         However, this representation of characters could have been improved by using a single 64-bit integer to represent each character instead.
     </p>
     <p class="left-bar fade-in">
-        <i>Event loop</i> was used to handle input from the SNES controller, update the game state, and render the game to make the game feel responsive.
-        The game would tick a certain number of times per second and the event loop would run as fast as possible by subtracting the time it took to run from the time it was supposed to run using the internal clock.
+        <i>Event loop</i> was used to handle input from the SNES controller, update the game state, and render everything on the screen to make the game feel responsive.
+        The game would tick a certain number of times per second and the event loop would run as fast as possible by subtracting the time it took to run from the time it was supposed to run using the Pi's internal clock.
     </p>
 
     <h2 class="left-bar fade-in">images</h2>
@@ -69,4 +69,3 @@ import "../../../styles/global.scss"
         <img class="fade-in" src="/images/snesk/win.jpg" alt="SNESK win screen" />
     </div>
 </ProjectPage>
-<Footer />

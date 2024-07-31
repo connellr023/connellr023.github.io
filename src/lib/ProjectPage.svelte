@@ -1,7 +1,4 @@
 <script lang="ts">
-import { onMount } from "svelte"
-
-import Main from "$lib/Main.svelte"
 import SocialLink from "$lib/SocialLink.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import Github from "$lib/vector/GitHub.svelte"
@@ -16,45 +13,43 @@ export let repository: [string, string] | null = null
 export let extraContributers: string[] = []
 </script>
 
-<Main>
-    <div class="title-container">
-        <div class="name-container column">
-            <a class="container" href={`/#${category}`} draggable={false}>
-                <div class="column">
-                    <div class="row">
-                        <span class="back underline left-bar yellow">{category}</span>
-                        <span class="divider">{"/"}</span>
-                    </div>
-                    <h1 class="left-bar">
-                        <TypeWriter text={title} />
-                    </h1>
+<div class="title-container">
+    <div class="name-container column">
+        <a class="container" href={`/#${category}`} draggable={false}>
+            <div class="column">
+                <div class="row">
+                    <span class="back underline left-bar yellow">{category}</span>
+                    <span class="divider">{"/"}</span>
                 </div>
-            </a>
-            <p class="left-bar comment contributers">{[defaultContributer, ...extraContributers].join(", ")}</p>
-        </div>
-        <div class="contact-container column">
-            <ul>
-                {#if deployment}
-                    <li>
-                        <SocialLink link={deployment[1]} linkText={deployment[0]}>
-                            <Docker />
-                        </SocialLink>
-                    </li>
-                {/if}
-                {#if repository}
-                    <li>
-                        <SocialLink link={repository[1]} linkText={repository[0]}>
-                            <Github />
-                        </SocialLink>
-                    </li>
-                {/if}
-            </ul>
-        </div>
+                <h1 class="left-bar">
+                    <TypeWriter text={title} />
+                </h1>
+            </div>
+        </a>
+        <p class="left-bar comment contributers">{[defaultContributer, ...extraContributers].join(", ")}</p>
     </div>
-    <div class="content-container">
-        <slot></slot>
+    <div class="contact-container column">
+        <ul>
+            {#if deployment}
+                <li>
+                    <SocialLink link={deployment[1]} linkText={deployment[0]}>
+                        <Docker />
+                    </SocialLink>
+                </li>
+            {/if}
+            {#if repository}
+                <li>
+                    <SocialLink link={repository[1]} linkText={repository[0]}>
+                        <Github />
+                    </SocialLink>
+                </li>
+            {/if}
+        </ul>
     </div>
-</Main>
+</div>
+<div class="content-container">
+    <slot></slot>
+</div>
 
 <style lang="scss">
 @import "../styles/variables.scss";
@@ -66,6 +61,7 @@ div.title-container {
     align-items: center;
     width: 100%;
     max-width: $max-content-width;
+    margin-top: 1.8rem;
     margin-bottom: 0.5rem;
 
     div.name-container {

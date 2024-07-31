@@ -30,7 +30,7 @@ ul {
     justify-content: center;
     flex-direction: row;
     gap: 1.1rem;
-    margin-top: 0.8rem;
+    margin-top: 0.2rem;
     flex-wrap: wrap;
 
     li button {

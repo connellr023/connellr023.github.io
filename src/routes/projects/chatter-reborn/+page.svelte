@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -18,7 +17,7 @@ import "../../../styles/global.scss"
         It allows users to speed chat with random strangers in real-time.
     </p>
 
-    <h2 class="left-bar fade-in">why?</h2>
+    <h2 class="left-bar fade-in">why</h2>
     <p class="left-bar fade-in">I chose to re-implement this project in Gleam for the following reasions:</p>
     <p class="left-bar fade-in">
         <i>Learning functional programming</i> was something I wanted to do for a while, and Gleam seemed like a good language to start with.
@@ -31,6 +30,10 @@ import "../../../styles/global.scss"
     </p>
     <p class="left-bar fade-in">
         <i>Concurrency</i> is a big part of the Erlang ecosystem, and I wanted to see how it was implemented in Gleam.
+    </p>
+    <p class="left-bar fade-in">
+        What is interesting about this approach, is that the webserver can scale to handle many users at once because of the way the Erlang VM handles concurrency.
+        This is in contrast to single-threaded servers like those in Node.js which will hit a limit on the number of users they can handle at some point.
     </p>
 
     <h2 class="left-bar fade-in">challenges</h2>
@@ -51,4 +54,3 @@ import "../../../styles/global.scss"
         <img class="fade-in" src="/images/chatter-reborn/3.png" alt="Chatter Reborn chat view">
     </div>
 </ProjectPage>
-<Footer />

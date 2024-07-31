@@ -1,6 +1,5 @@
 <script>
 import ProjectPage from "$lib/ProjectPage.svelte"
-import Footer from "$lib/Footer.svelte"
 
 import "../../../styles/global.scss"
 </script>
@@ -64,4 +63,3 @@ import "../../../styles/global.scss"
         I cannot vet how production ready it is because I never used it in production... but it should be fine.
     </p>
 </ProjectPage>
-<Footer />
