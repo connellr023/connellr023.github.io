@@ -4,7 +4,6 @@ import { browser } from "$app/environment"
 
 import Header from "$lib/Header.svelte"
 import Greeting from "$lib/Greeting.svelte"
-import TypeWriter from "$lib/TypeWriter.svelte"
 import TechCarousel from "$lib/TechCarousel.svelte"
 import ProjectEntry from "$lib/ProjectEntry.svelte"
 
@@ -37,7 +36,7 @@ if (browser) {
 <Greeting />
 <div class="content-container">
     <p class="left-bar intro fade-in">
-        Hey, I'm Connell, a <i>Computer Science</i> student at the <i>University of Calgary</i>.
+        Currently, I am a <i>Computer Science</i> student at the <i>University of Calgary</i>.
         I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
         Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
     </p>
