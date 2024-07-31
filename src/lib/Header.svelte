@@ -12,9 +12,9 @@ const categories = ["main_projects", "learning_projects", "school_projects"]
         <ul class="fade-down">
             {#each categories as category}
                 <li>
-                    <a href={`#${category}`} on:click|preventDefault={() => scrollToCategory(category)}>
+                    <button on:click|preventDefault={() => scrollToCategory(category)}>
                         {category}
-                    </a>
+                    </button>
                 </li>
             {/each}
         </ul>
@@ -32,17 +32,21 @@ ul {
     gap: 1.2rem;
     margin-top: 0.8rem;
 
-    li a {
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 500;
-        transition: color 0.2s;
-        color: $gruvbox-grey-1;
-        transition: color 0.13s ease;
+    li button {
+        color: $gruvbox-grey-2;
+        border: 1px solid transparent;
+        background-color: transparent;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        font-size: 0.9rem;
+        font-family: $font;
+        transition: all 0.1s ease;
 
         &:hover {
+            color: $gruvbox-white;
+            border: 1px solid $gruvbox-grey-2;
+            background-color: $gruvbox-grey-1;
             text-decoration: underline;
-            color: $gruvbox-grey-2;
         }
     }
 }
