@@ -71,13 +71,16 @@ if (browser) {
         </div>
 
         <h2 id="learning_projects" class="left-bar fade-in">learning_projects</h2>
-        <p class="left-bar fade-in">{"These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality."}</p>
+        <p class="left-bar fade-in">
+            These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality.
+            This is not an exhaustive list of all the projects I have worked on, but rather a selection of the most interesting ones.
+        </p>
         <div class="fade-in">
             <ProjectEntry
                 isPrivate={false}
                 href="/projects/chatter-reborn"
                 name="Chatter Reborn"
-                description="A massively concurrent chat application architected for real-time, one-on-one conversations."
+                description="A massively concurrent chat application created for real-time, one-on-one conversations."
                 stack={["Gleam", "Gleeunit", "React", "Docker"]}
                 languageData={[
                   ["Gleam", "gleam", 52],
@@ -119,7 +122,7 @@ if (browser) {
                 isPrivate={false}
                 href="/projects/gratis"
                 name="gratis"
-                description="A lightweight framework for developing REST-like APIs in PHP."
+                description="A lightweight framework for developing RESTful APIs in PHP."
                 stack={["PHP", "PHPUnit", "Composer"]}
                 languageData={[["PHP", "php", 100]]}
             />
@@ -158,7 +161,7 @@ if (browser) {
             <ProjectEntry
                 isPrivate={true}
                 href="/projects/self-checkout-station"
-                name="Self-Checkout Station Control Software"
+                name="Self-Checkout Station"
                 description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
                 stack={["Java, JUnit", "Swing"]}
                 languageData={[["Java", "java", 100]]}

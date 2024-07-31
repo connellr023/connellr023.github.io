@@ -76,7 +76,7 @@ div.content-container {
 
 div.logo-container {
     svg {
-        width: 2.5rem !important;
+        width: 2.4rem !important;
         height: auto !important;
     }
 }
@@ -201,9 +201,15 @@ div.row {
 }
 
 .fade-in {
+    $shift: 1.5rem;
+
     opacity: 0;
-    transform: translateY(1.5rem);
+    transform: translateY($shift);
     transition: all 0.4s ease;
+
+    &.above {
+        transform: translateY(-$shift);
+    }
 
     &.appear {
         opacity: 1;

@@ -40,7 +40,7 @@ span {
         position: relative;
 
         &:after {
-            $width: 0.77rem;
+            $width: 0.75rem;
 
             content: " ";
             position: absolute;

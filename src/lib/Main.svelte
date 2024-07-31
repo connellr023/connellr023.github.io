@@ -6,23 +6,22 @@ onMount(() => {
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
+            const rect = entry.target.getBoundingClientRect()
+
             if (entry.isIntersecting) {
               entry.target.classList.add("appear")
               observer.unobserve(entry.target)
+            }
+            else if (rect.top < 0) {
+              entry.target.classList.add("above")
             }
         })
     },
     { threshold: 0.2 })
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
         observer.observe(section)
     })
-
-    // window.scroll({
-    //   top: 0,
-    //   left: 0,
-    //   behavior: "instant"
-    // })
 })
 </script>
 

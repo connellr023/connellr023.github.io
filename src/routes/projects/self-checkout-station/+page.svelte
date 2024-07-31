@@ -6,7 +6,7 @@ import "../../../styles/global.scss"
 </script>
 
 <ProjectPage
-    title="Self Checkout Station"
+    title="Self-Checkout Station"
     category="school_projects"
     extraContributers={[
       "Tara Strickland",
