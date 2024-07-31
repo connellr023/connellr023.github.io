@@ -29,8 +29,9 @@ ul {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 1.2rem;
+    gap: 1.1rem;
     margin-top: 0.8rem;
+    flex-wrap: wrap;
 
     li button {
         color: $gruvbox-grey-2;

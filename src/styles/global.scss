@@ -74,6 +74,13 @@ div.content-container {
     max-width: $max-content-width;
 }
 
+div.logo-container {
+    svg {
+        width: 2.5rem !important;
+        height: auto !important;
+    }
+}
+
 div.contact-container {
     & > ul {
         @include fade-transform(

@@ -26,7 +26,7 @@ $lang-svelte: #ff3e00;
 $mobile-breakpoint: 460px;
 $max-content-width: 800px;
 
-$tech-icon-size: 2.5rem;
+$tech-icon-size: clamp(25px, 2.4lvw, 90px);
 
 @mixin fade-transform($transform, $duration: 0.5s, $delay-step: 0.15s, $children: 1, $anim-delay: 0, $anim-id) {
     & > * {
