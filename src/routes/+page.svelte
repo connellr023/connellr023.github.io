@@ -13,17 +13,12 @@ import ProjectEntry from "$lib/ProjectEntry.svelte"
 import "../styles/global.scss"
 
 if (browser) {
-  const scrollToCategory = (category: string) => {
-      const element = document.getElementById(category)
-      element?.scrollIntoView({ behavior: "smooth" })
-  }
-
   const onHashChanged = () => {
       const hash = window.location.hash
 
       if (hash) {
           const category = hash.slice(1)
-          scrollToCategory(category)
+          document.getElementById(category)?.scrollIntoView()
       }
   }
 

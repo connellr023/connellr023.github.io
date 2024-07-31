@@ -1,9 +1,22 @@
+<script lang="ts">
+const scrollToCategory = (category: string) => {
+    const element = document.getElementById(category)
+    element?.scrollIntoView({ behavior: "smooth" })
+}
+
+const categories = ["main_projects", "learning_projects", "school_projects"]
+</script>
+
 <header>
     <nav>
         <ul class="fade-down">
-            <li><a draggable={false} href="#main_projects">main_projects</a></li>
-            <li><a draggable={false} href="#learning_projects">learning_projects</a></li>
-            <li><a draggable={false} href="#school_projects">school_projects</a></li>
+            {#each categories as category}
+                <li>
+                    <a href={`#${category}`} on:click|preventDefault={() => scrollToCategory(category)}>
+                        {category}
+                    </a>
+                </li>
+            {/each}
         </ul>
     </nav>
 </header>
