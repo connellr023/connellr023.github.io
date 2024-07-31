@@ -34,7 +34,7 @@ import "../../../styles/global.scss"
     <h2 class="left-bar fade-in">original_inception</h2>
     <p class="left-bar fade-in">
         The original inception of this project was created by me in grade 8 with PHP and a MySQL database running on phpMyAdmin.
-        Futhermore, most of the development was completed on an Acer chromebook emulating Ubuntu.
+        Futhermore, most of the development was completed on an old Acer chromebook emulating Ubuntu.
         It was actually more advanced than this version in that it had an account system.
         However, the chat system used HTTP polling which was very inefficient and it never saw the light of day.
         And yes, JQuery was used. Framework hell did not exist yet.
