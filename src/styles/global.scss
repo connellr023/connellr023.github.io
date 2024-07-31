@@ -18,6 +18,17 @@ button {
     border: none;
 }
 
+b {
+    a {
+        color: $gruvbox-white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 p {
     line-height: 1.3;
     text-align: justify;

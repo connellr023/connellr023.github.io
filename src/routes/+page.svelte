@@ -107,7 +107,7 @@ if (browser) {
                 href="/projects/tensort"
                 name="tensort"
                 description="A CLI tool that utilizes a ResNet convolutional neural network to recognize content in images and sort them into classes."
-                stack={["Rust", "Libtorch", "Docker"]}
+                stack={["Rust", "tch.rs (Libtorch)", "Docker"]}
                 languageData={[
                   ["Rust", "rust", 96],
                   ["Docker", "docker", 4]

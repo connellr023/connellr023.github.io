@@ -31,6 +31,19 @@ import "../../../styles/global.scss"
         I used <b>Jest</b> for the backend and <b>Vitest</b> for the frontend.
     </p>
 
+    <h2 class="left-bar fade-in">original_inception</h2>
+    <p class="left-bar fade-in">
+        The original inception of this project was created by me in grade 8 with PHP and a MySQL database running on phpMyAdmin.
+        Futhermore, most of the development was completed on an Acer chromebook emulating Ubuntu.
+        It was actually more advanced than this version in that it had an account system.
+        However, the chat system used HTTP polling which was very inefficient and it never saw the light of day.
+        And yes, JQuery was used. Framework hell did not exist yet.
+    </p>
+    <p class="left-bar fade-in">
+        Another cool fact, the logo used in both this project and Chatter Reborn is the same one I made in grade 8 with Adobe Illustrator on a school computer.
+        That is its only remains as Google Drive was used as version control...
+    </p>
+
     <h2 class="left-bar fade-in">images</h2>
     <div class="image-container">
         <img class="fade-in" src="/images/chatter/1.png" alt="Chatter start view" />
