@@ -132,9 +132,9 @@ if (browser) {
             description="My portfolio website which you are currently viewing!"
             stack={["SvelteKit", "Typescript"]}
             languageData={[
-                ["Svelte", "svelte", 95],
-                ["SCSS", "scss", 3],
-                ["TS", "ts", 2]
+                ["Svelte", "svelte", 90],
+                ["SCSS", "scss", 7],
+                ["TS", "ts", 3]
             ]}
         />
     </div>
