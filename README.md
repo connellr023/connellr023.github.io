@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="static/favicon.png" width="70px" />
   <br />
-  $\text{connellr023}$
+  $\text{connellr023.github.io}$
 </h1>
 
 > My programming portfolio website to showcase my work!
@@ -20,5 +20,3 @@ npm install
 ```bash
 npm build
 ```
-
-This is configured to create a `docs` folder for deployment to GitHub Pages.
