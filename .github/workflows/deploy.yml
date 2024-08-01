@@ -26,10 +26,10 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add build --force
           git commit -m "Deploy to GitHub Pages"
-          git push origin `git subtree split --prefix build main`:gh-pages --force
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }} `git subtree split --prefix build main`:gh-pages --force
