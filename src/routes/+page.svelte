@@ -38,17 +38,21 @@ if (browser) {
     <p class="left-bar intro fade-in">
         Currently, I am a <i>Computer Science</i> student at the <i>University of Calgary</i>.
         I specialize in building <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software tailored to the web.
-        Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently honing these skills.
+        Whether that be in the context of a <i>web app</i>, <i>mobile app</i>, or a <i>static website</i>, I am consistently working to improve these skills.
     </p>
 
     <h2 class="left-bar fade-in">technologies</h2>
-    <p class="left-bar fade-in">{"I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below."}</p>
+    <p class="left-bar fade-in">
+        I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below.
+    </p>
     <div class="carousel-container fade-in">
         <TechCarousel />
     </div>
 
     <h2 id="main_projects" class="left-bar fade-in">main_projects</h2>
-    <p class="left-bar fade-in">{"This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort."}</p>
+    <p class="left-bar fade-in">
+        This section is dedicated to the projects that have had the largest scale, complexity and required significant time and effort.
+    </p>
     <div class="fade-in">
         <ProjectEntry
             isPrivate={true}
@@ -69,7 +73,7 @@ if (browser) {
     <h2 id="learning_projects" class="left-bar fade-in">learning_projects</h2>
     <p class="left-bar fade-in">
         These projects were created for the purposes of self-learning and are not what I would consider very complex but are still interesting in terms of their functionality.
-        This is not an exhaustive list of all the projects I have worked on, but rather a selection of the most interesting ones.
+        This is not an exhaustive list of all the projects I have worked on, but rather a selection of the most relevant ones.
     </p>
     <div class="fade-in">
         <ProjectEntry
@@ -139,7 +143,9 @@ if (browser) {
     </div>
 
     <h2 id="school_projects" class="left-bar fade-in">school_projects</h2>
-    <p class="left-bar fade-in">These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.</p>
+    <p class="left-bar fade-in">
+        These are some of my projects completed as school work which were particularly interesting to me and likely relevant in a job context.
+    </p>
     <div class="fade-in">
         <ProjectEntry
             isPrivate={true}

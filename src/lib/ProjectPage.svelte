@@ -1,4 +1,6 @@
 <script lang="ts">
+import { base } from "$app/paths"
+
 import SocialLink from "$lib/SocialLink.svelte"
 import TypeWriter from "$lib/TypeWriter.svelte"
 import Github from "$lib/vector/GitHub.svelte"
@@ -15,7 +17,7 @@ export let extraContributers: string[] = []
 
 <div class="title-container">
     <div class="name-container column">
-        <a class="container" href={`/#${category}`} draggable={false}>
+        <a class="container" href="{base}/#{category}" draggable={false}>
             <div class="column">
                 <div class="row">
                     <span class="back underline left-bar yellow">{category}</span>

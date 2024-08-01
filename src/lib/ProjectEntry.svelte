@@ -15,6 +15,7 @@ export let href: string = ""
         <span class="token-red">{isPrivate ? "private" : "public"}</span>
         <span class="underline string">{name}</span>
     </h3>
+    <span class="arrow">{"->"}</span>
 </a>
 <p class="left-bar">{description}</p>
 <p class="left-bar stack comment">{stack.join(", ")}</p>
@@ -28,6 +29,21 @@ h3 {
     margin: 0;
     flex-grow: 1;
     position: relative;
+}
+
+span.arrow {
+    color: $gruvbox-grey-2;
+    padding-right: 0.5rem;
+    transform: translateX(-0.5rem);
+    transition: all 0.15s ease;
+    font-size: 1.1rem;
+}
+
+a.container {
+    &:hover span.arrow {
+        color: $gruvbox-white;
+        transform: translateX(0);
+    }
 }
 
 p.stack {
