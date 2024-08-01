@@ -20,9 +20,7 @@ if (browser) {
   }
 
   onMount(() => {
-      window.onload = () => { window.location.hash = "" }
       window.addEventListener("hashchange", onHashChanged)
-
       onHashChanged()
   })
 

@@ -1,7 +1,11 @@
 <script lang="ts">
-import { afterUpdate } from "svelte"
+import { afterUpdate, onMount } from "svelte"
 
 import Footer from "$lib/Footer.svelte"
+
+onMount(() => {
+    window.location.hash = ""
+})
 
 afterUpdate(() => {
     const sections = document.querySelectorAll(".fade-in")

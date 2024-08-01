@@ -36,7 +36,7 @@ import "../../../styles/global.scss"
         Futhermore, most of the development was completed on an old Acer chromebook emulating Ubuntu.
         It was actually more advanced than this version in that it had an account system.
         However, the chat system used HTTP polling which was very inefficient and it never saw the light of day.
-        And yes, JQuery was used. Framework hell did not exist yet.
+        And yes, JQuery was used to sync app state with the DOM, I miss those days...
     </p>
     <p class="left-bar fade-in">
         Another cool fact, the logo used in both this project and Chatter Reborn is the same one I made in grade 8 with Adobe Illustrator on a school computer.

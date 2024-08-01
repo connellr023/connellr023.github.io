@@ -248,3 +248,13 @@ a.container {
         }
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: $gruvbox-grey-1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $gruvbox-grey-2;
+    -webkit-border-radius: 1ex;
+}
