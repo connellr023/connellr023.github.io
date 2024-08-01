@@ -4,7 +4,7 @@ const scrollToCategory = (category: string) => {
     element?.scrollIntoView({ behavior: "smooth" })
 }
 
-const categories = ["main_projects", "learning_projects", "school_projects"]
+const categories = ["main_projects", "learning_projects", "school_projects", "hackathons"]
 </script>
 
 <header>

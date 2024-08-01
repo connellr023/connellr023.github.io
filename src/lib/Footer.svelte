@@ -3,7 +3,7 @@ import { onMount } from "svelte"
 import type { CommitResponse } from "$lib/index"
 
 const commitIdRegex = /([a-f0-9]{40})$/
-const apiEndpoint = "https://api.github.com/repos/connellr023/cr023/commits/main"
+const apiEndpoint = "https://api.github.com/repos/connellr023/connellr023.github.io/commits/main"
 
 let commit: CommitResponse | null = null
 let commitIdString: string = ""

@@ -5,9 +5,9 @@ import "../../../styles/global.scss"
 </script>
 
 <ProjectPage
-    title="cr023"
+    title="connellr023.github.io"
     category="learning_projects"
-    repository={["connellr023/cr023", "https://github.com/connellr023/cr023"]}
+    repository={["connellr023", "https://github.com/connellr023/connellr023.github.io"]}
 >
     <h2 class="left-bar fade-in">hello</h2>
     <p class="left-bar fade-in">

@@ -43,7 +43,7 @@ if (browser) {
 
     <h2 class="left-bar fade-in">technologies</h2>
     <p class="left-bar fade-in">
-        I have experience with a variety of technologies, but I am most comfortable with as well as enjoy the ones below.
+        I have experience with a variety of technologies, but I am most comfortable with and enjoy the ones below.
     </p>
     <div class="carousel-container fade-in">
         <TechCarousel />
@@ -130,8 +130,8 @@ if (browser) {
     <div class="fade-in">
         <ProjectEntry
             isPrivate={false}
-            href="/projects/cr023"
-            name="cr023"
+            href="/projects/connellr023.github.io"
+            name="connellr023.github.io"
             description="My portfolio website which you are currently viewing!"
             stack={["SvelteKit", "Typescript"]}
             languageData={[
@@ -167,6 +167,24 @@ if (browser) {
             description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
             stack={["Java, JUnit", "Swing"]}
             languageData={[["Java", "java", 100]]}
+        />
+    </div>
+
+    <h2 id="hackathons" class="left-bar fade-in">hackathons</h2>
+    <p class="left-bar fade-in">
+        This section is for projects that were created during hackathons. These projects were created in a short amount of time and are not polished.
+    </p>
+    <div class="fade-in">
+        <ProjectEntry
+            isPrivate={false}
+            href="/projects/atla"
+            name="Atla"
+            description="A web app that aims to bring the Calgarian community together by providing a centralized platform to post and view volunteering events. Built with a team of 2."
+            stack={["Next.js", "TypeScript", "Redis", "Vercel"]}
+            languageData={[
+                ["TS", "ts", 83],
+                ["SCSS", "scss", 17]
+            ]}
         />
     </div>
 </div>
