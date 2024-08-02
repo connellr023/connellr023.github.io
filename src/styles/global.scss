@@ -193,7 +193,7 @@ div.row {
     @include fade-transform(
         $transform: translateY(-1.3rem),
         $children: 10,
-        $anim-delay: 0.4s,
+        $anim-delay: 0.2s,
         $delay-step: 0.07s,
         $anim-id: 4
     );

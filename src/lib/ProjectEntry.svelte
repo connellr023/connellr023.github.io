@@ -37,6 +37,7 @@ span.arrow {
     transform: translateX(-0.5rem);
     transition: all 0.15s ease;
     font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 a.container {
