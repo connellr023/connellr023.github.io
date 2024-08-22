@@ -86,6 +86,15 @@ span {
     &.svelte {
         background-color: $lang-svelte;
     }
+
+    &.make {
+        background-color: $lang-make;
+        color: $gruvbox-white;
+    }
+
+    &.cpp {
+        background-color: $lang-cpp;
+    }
 }
 
 div.container {

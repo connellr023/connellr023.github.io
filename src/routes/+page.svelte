@@ -75,6 +75,19 @@ if (browser) {
     </p>
     <div class="fade-in">
         <ProjectEntry
+            isPrivate={true}
+            href="/projects/snake-plus-plus"
+            name="Snake++"
+            description="An infinitely playable version of the classic Snake game with power-ups and a high score system."
+            stack={["C++", "GNU Make"]}
+            languageData={[
+                ["C++", "cpp", 97],
+                ["Make", "make", 3]
+            ]}
+        />
+    </div>
+    <div class="fade-in">
+        <ProjectEntry
             isPrivate={false}
             href="/projects/chatter-reborn"
             name="Chatter Reborn"
@@ -150,10 +163,11 @@ if (browser) {
             href="/projects/snesk"
             name="SNESK"
             description="A re-implementation of snake that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
-            stack={["C", "Raspberry Pi 4"]}
+            stack={["C", "GNU Make", "Raspberry Pi 4"]}
             languageData={[
-                ["C", "c", 97],
-                ["Assembly", "asm", 3]
+                ["C", "c", 94],
+                ["Assembly", "asm", 3],
+                ["Make", "make", 3]
             ]}
         />
     </div>

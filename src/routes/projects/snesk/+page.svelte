@@ -21,7 +21,7 @@ import "../../../styles/global.scss"
         Around the map, there are <b>power-ups</b> that are generated frequently and can be collected to help the player.
     </p>
     <p class="left-bar fade-in">
-        <i>Grow power-up</i> increases the length of the snake by and is the colour purple.
+        <i>Grow power-up</i> increases the length of the snake and is the colour purple.
     </p>
     <p class="left-bar fade-in">
         <i>Shrink power-up</i> decreases the length of the snake by and is the colour orange.
