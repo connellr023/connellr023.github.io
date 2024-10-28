@@ -2,259 +2,259 @@
 @import "./variables.scss";
 
 :root {
-    font-size: clamp(17px, 2.8lvw, 21px);
+  font-size: clamp(17px, 2.8lvw, 21px);
 }
 
 body {
-    background-color: $gruvbox-black;
-    color: $gruvbox-white;
-    font-family: $font;
+  background-color: $gruvbox-black;
+  color: $gruvbox-white;
+  font-family: $font;
 }
 
 button {
-    cursor: pointer;
-    outline: none;
-    appearance: none;
-    border: none;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  border: none;
 }
 
 b {
-    a {
-        color: $gruvbox-white;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-p {
-    line-height: 1.3;
-    text-align: justify;
-    margin: 0;
-
-    i {
-        color: $gruvbox-lime;
-    }
-}
-
-main {
-    $horizontal-margin: 20px;
-
-    margin-left: $horizontal-margin;
-    margin-right: $horizontal-margin;
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-    font-weight: normal;
-    border-color: $gruvbox-green !important;
-
-    &:before {
-        content: "&";
-        color: $gruvbox-green;
-    }
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-div.content-container {
-    width: 100%;
-    max-width: $max-content-width;
-}
-
-div.logo-container {
-    svg {
-        width: 2.4rem !important;
-        height: auto !important;
-    }
-}
-
-div.contact-container {
-    & > ul {
-        display: flex;
-        flex-direction: column;
-
-        @include fade-transform(
-            $transform: translateX(1.3rem),
-            $children: 2,
-            $duration: 0.6s,
-            $delay-step: 0.2s,
-            $anim-delay: 0.1s,
-            $anim-id: 2
-        );
-    }
-}
-
-div.image-container {
-    margin-top: 1rem;
-
-    & > img {
-        border-radius: 0.3rem;
-        border: 1px solid $gruvbox-grey-2;
-        margin-bottom: 0.5rem;
-        width: 100%;
-    }
-}
-
-div.column {
-    display: flex;
-    flex-direction: column;
-}
-
-div.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.string {
-    color: $gruvbox-lime;
-
-    &:before,
-    &:after {
-        content: "\"";
-    }
-}
-
-.comment {
-    color: $gruvbox-grey-2;
-
-    $dist: 0.5rem;
-
-    &:before {
-        content: "/\*";
-        margin-right: $dist;
-    }
-
-    &:after {
-        content: "\*/";
-        margin-left: $dist;
-    }
-}
-
-.left-bar {
-    border-left: 2px solid $gruvbox-white;
-    padding-left: 0.7rem;
-
-    &.pink {
-        border-color: $gruvbox-pink;
-    }
-
-    &.red {
-        border-color: $gruvbox-red;
-    }
-
-    &.green {
-        border-color: $gruvbox-green;
-    }
-
-    &.yellow {
-        border-color: $gruvbox-yellow;
-    }
-
-    & + p {
-        margin-top: 0;
-        padding-top: 0.3rem;
-    }
-}
-
-.qualifier-after:after {
-    content: "::";
-    color: $gruvbox-green;
-}
-
-.token-red {
-    color: $gruvbox-red;
-}
-
-.token-green {
-    color: $gruvbox-green;
-}
-
-.token-yellow {
-    color: $gruvbox-yellow;
-}
-
-.token-pink {
-    color: $gruvbox-pink;
-}
-
-.fade-down {
-    @include fade-transform(
-        $transform: translateY(-1.3rem),
-        $children: 10,
-        $anim-delay: 0.2s,
-        $delay-step: 0.07s,
-        $anim-id: 4
-    );
-}
-
-.fade-in {
-    $shift: 1.5rem;
-
-    opacity: 0;
-    transform: translateY($shift);
-    transition: all 0.4s ease;
-
-    &.above {
-        transform: translateY(-$shift);
-    }
-
-    &.appear {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-a.container {
-    $border-radius: 0.4rem;
-    $vertical-padding: 0.25rem;
-    $border: 1px solid transparent;
-
-    margin-top: 2rem;
-    cursor: pointer;
-    border-bottom: $border !important;
-    border-top: $border !important;
-    border-right: $border !important;
-    padding-top: $vertical-padding;
-    padding-bottom: $vertical-padding;
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: all 0.08s ease;
+  a {
+    color: $gruvbox-white;
     text-decoration: none;
 
     &:hover {
-        border-right-color: $gruvbox-grey-2 !important;
-        border-top-color: $gruvbox-grey-2 !important;
-        border-bottom-color: $gruvbox-grey-2 !important;
-        background-color: $gruvbox-grey-1;
-
-        & .underline {
-            text-decoration: underline;
-        }
+      text-decoration: underline;
     }
+  }
+}
+
+p {
+  line-height: 1.3;
+  text-align: justify;
+  margin: 0;
+
+  i {
+    color: $gruvbox-lime;
+  }
+}
+
+main {
+  $horizontal-margin: 20px;
+
+  margin-left: $horizontal-margin;
+  margin-right: $horizontal-margin;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  border-color: $gruvbox-green !important;
+
+  &:before {
+    content: "&";
+    color: $gruvbox-green;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.content-container {
+  width: 100%;
+  max-width: $max-content-width;
+}
+
+div.logo-container {
+  svg {
+    width: 2.4rem !important;
+    height: auto !important;
+  }
+}
+
+div.contact-container {
+  & > ul {
+    display: flex;
+    flex-direction: column;
+
+    @include fade-transform(
+      $transform: translateX(1.3rem),
+      $children: 2,
+      $duration: 0.6s,
+      $delay-step: 0.2s,
+      $anim-delay: 0.1s,
+      $anim-id: 2
+    );
+  }
+}
+
+div.image-container {
+  margin-top: 1rem;
+
+  & > img {
+    border-radius: 0.3rem;
+    border: 1px solid $gruvbox-grey-2;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+}
+
+div.column {
+  display: flex;
+  flex-direction: column;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.string {
+  color: $gruvbox-lime;
+
+  &:before,
+  &:after {
+    content: '"';
+  }
+}
+
+.comment {
+  color: $gruvbox-grey-2;
+
+  $dist: 0.5rem;
+
+  &:before {
+    content: "/\*";
+    margin-right: $dist;
+  }
+
+  &:after {
+    content: "\*/";
+    margin-left: $dist;
+  }
+}
+
+.left-bar {
+  border-left: 2px solid $gruvbox-white;
+  padding-left: 0.7rem;
+
+  &.pink {
+    border-color: $gruvbox-pink;
+  }
+
+  &.red {
+    border-color: $gruvbox-red;
+  }
+
+  &.green {
+    border-color: $gruvbox-green;
+  }
+
+  &.yellow {
+    border-color: $gruvbox-yellow;
+  }
+
+  & + p {
+    margin-top: 0;
+    padding-top: 0.3rem;
+  }
+}
+
+.qualifier-after:after {
+  content: "::";
+  color: $gruvbox-green;
+}
+
+.token-red {
+  color: $gruvbox-red;
+}
+
+.token-green {
+  color: $gruvbox-green;
+}
+
+.token-yellow {
+  color: $gruvbox-yellow;
+}
+
+.token-pink {
+  color: $gruvbox-pink;
+}
+
+.fade-down {
+  @include fade-transform(
+    $transform: translateY(-1.3rem),
+    $children: 10,
+    $anim-delay: 0.2s,
+    $delay-step: 0.07s,
+    $anim-id: 4
+  );
+}
+
+.fade-in {
+  $shift: 1.5rem;
+
+  opacity: 0;
+  transform: translateY($shift);
+  transition: all 0.4s ease;
+
+  &.above {
+    transform: translateY(-$shift);
+  }
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a.container {
+  $border-radius: 0.4rem;
+  $vertical-padding: 0.25rem;
+  $border: 1px solid transparent;
+
+  margin-top: 2rem;
+  cursor: pointer;
+  border-bottom: $border !important;
+  border-top: $border !important;
+  border-right: $border !important;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.08s ease;
+  text-decoration: none;
+
+  &:hover {
+    border-right-color: $gruvbox-grey-2 !important;
+    border-top-color: $gruvbox-grey-2 !important;
+    border-bottom-color: $gruvbox-grey-2 !important;
+    background-color: $gruvbox-grey-1;
+
+    & .underline {
+      text-decoration: underline;
+    }
+  }
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background: $gruvbox-grey-1;
+  width: 5px;
+  background: $gruvbox-grey-1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $gruvbox-grey-2;
-    -webkit-border-radius: 1ex;
+  background: $gruvbox-grey-2;
+  -webkit-border-radius: 1ex;
 }

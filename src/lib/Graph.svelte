@@ -1,19 +1,19 @@
 <script lang="ts">
-import type { GraphData } from "$lib/index"
+  import type { GraphData } from "$lib/index";
 
-export let data: GraphData[]
+  export let data: GraphData[];
 </script>
 
 <div class="container">
-    {#each data as [name, className, value]}
-        <span style={`flex-grow: ${value}`} class={className}>{name}</span>
-    {/each}
+  {#each data as [name, className, value]}
+    <span style={`flex-grow: ${value}`} class={className}>{name}</span>
+  {/each}
 </div>
 
 <style lang="scss">
-@import "../styles/variables.scss";
+  @import "../styles/variables.scss";
 
-span {
+  span {
     $side-padding: 4px;
 
     padding-left: $side-padding;
@@ -30,78 +30,78 @@ span {
     cursor: default;
 
     &:hover {
-        $side-padding: 2.2rem;
+      $side-padding: 2.2rem;
 
-        padding-left: $side-padding;
-        padding-right: $side-padding;
+      padding-left: $side-padding;
+      padding-right: $side-padding;
     }
 
     &.rust {
-        background-color: $lang-rust;
+      background-color: $lang-rust;
     }
 
     &.vue {
-        background-color: $lang-vue;
+      background-color: $lang-vue;
     }
 
     &.ts {
-        background-color: $lang-ts;
-        color: $gruvbox-white;
+      background-color: $lang-ts;
+      color: $gruvbox-white;
     }
 
     &.docker {
-        background-color: $lang-docker;
-        color: $gruvbox-white;
+      background-color: $lang-docker;
+      color: $gruvbox-white;
     }
 
     &.scss {
-        background-color: $lang-scss;
-        color: $gruvbox-white;
+      background-color: $lang-scss;
+      color: $gruvbox-white;
     }
 
     &.gleam {
-        background-color: $lang-gleam;
+      background-color: $lang-gleam;
     }
 
     &.php {
-        background-color: $lang-php;
-        color: $gruvbox-white;
+      background-color: $lang-php;
+      color: $gruvbox-white;
     }
 
     &.c {
-        background-color: $lang-c;
-        color: $gruvbox-white;
+      background-color: $lang-c;
+      color: $gruvbox-white;
     }
 
     &.asm {
-        background-color: $lang-asm;
-        color: $gruvbox-white;
+      background-color: $lang-asm;
+      color: $gruvbox-white;
     }
 
     &.java {
-        background-color: $lang-java;
-        color: $gruvbox-white;
+      background-color: $lang-java;
+      color: $gruvbox-white;
     }
 
     &.svelte {
-        background-color: $lang-svelte;
+      background-color: $lang-svelte;
     }
 
     &.make {
-        background-color: $lang-make;
-        color: $gruvbox-white;
+      background-color: $lang-make;
+      color: $gruvbox-white;
     }
 
     &.cpp {
-        background-color: $lang-cpp;
+      background-color: $lang-cpp;
     }
-}
+  }
 
-div.container {
+  div.container {
     height: 1.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: $gruvbox-grey-2;
-}
+  }
 </style>
