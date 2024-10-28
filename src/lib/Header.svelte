@@ -5,6 +5,7 @@
   };
 
   const categories = [
+    "experience",
     "main_projects",
     "learning_projects",
     "school_projects",

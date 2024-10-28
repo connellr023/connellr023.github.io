@@ -10,10 +10,12 @@
 
   export let title: string;
   export let category:
+    | "experience"
     | "main_projects"
     | "learning_projects"
     | "school_projects"
     | "hackathons";
+
   export let deployment: [string, string] | null = null;
   export let repository: [string, string] | null = null;
   export let extraContributers: string[] = [];

@@ -50,6 +50,12 @@
     <TechCarousel />
   </div>
 
+  <h2 id="experience" class="left-bar fade-in">experience</h2>
+  <p class="left-bar fade-in">
+    This area is dedicated to work and volunteer experience related to software
+    development.
+  </p>
+
   <h2 id="main_projects" class="left-bar fade-in">main_projects</h2>
   <p class="left-bar fade-in">
     This section is dedicated to the projects that have had the largest scale,
