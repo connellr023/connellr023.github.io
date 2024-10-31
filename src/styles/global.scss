@@ -249,6 +249,34 @@ a.container {
   }
 }
 
+h3.entry-title {
+  font-weight: normal;
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+}
+
+span.arrow {
+  color: $gruvbox-grey-2;
+  padding-right: 0.5rem;
+  transform: translateX(-0.5rem);
+  transition: all 0.15s ease;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+a.entry-container {
+  &:hover span.arrow {
+    color: $gruvbox-white;
+    transform: translateX(0);
+  }
+}
+
+p.entry-stack {
+  padding-bottom: 0.3rem;
+  border-color: $gruvbox-grey-2;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   background: $gruvbox-grey-1;
