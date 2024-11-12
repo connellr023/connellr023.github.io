@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { GraphData } from "$lib/index";
+  import type { GraphData } from "$lib/types/GraphData";
 
   export let data: GraphData[];
 </script>
@@ -94,6 +94,11 @@
 
     &.cpp {
       background-color: $lang-cpp;
+    }
+
+    &.python {
+      background-color: $lang-python;
+      color: $gruvbox-white;
     }
   }
 

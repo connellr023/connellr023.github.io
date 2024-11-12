@@ -10,13 +10,16 @@
 
   export let title: string;
   export let category:
+    | "experience"
     | "main_projects"
     | "learning_projects"
     | "school_projects"
     | "hackathons";
+
   export let deployment: [string, string] | null = null;
   export let repository: [string, string] | null = null;
   export let extraContributers: string[] = [];
+  export let hideContributers: boolean = false;
 </script>
 
 <div class="title-container">
@@ -32,9 +35,11 @@
         </h1>
       </div>
     </a>
-    <p class="left-bar comment contributers">
-      {[defaultContributer, ...extraContributers].join(", ")}
-    </p>
+    {#if !hideContributers}
+      <p class="left-bar comment contributers">
+        {[defaultContributer, ...extraContributers].join(", ")}
+      </p>
+    {/if}
   </div>
   <div class="contact-container column">
     <ul>
@@ -60,7 +65,7 @@
 </div>
 
 <style lang="scss">
-  @import "../styles/variables.scss";
+  @import "../../styles/variables.scss";
 
   div.title-container {
     display: flex;

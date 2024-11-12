@@ -132,12 +132,12 @@ div.row {
   $dist: 0.5rem;
 
   &:before {
-    content: "/\*";
+    content: "/*";
     margin-right: $dist;
   }
 
   &:after {
-    content: "\*/";
+    content: "*/";
     margin-left: $dist;
   }
 }
@@ -156,6 +156,10 @@ div.row {
 
   &.green {
     border-color: $gruvbox-green;
+  }
+
+  &.lime {
+    border-color: $gruvbox-lime;
   }
 
   &.yellow {
@@ -247,6 +251,34 @@ a.container {
       text-decoration: underline;
     }
   }
+}
+
+a.entry-container {
+  h3.entry-title {
+    font-weight: normal;
+    margin: 0;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  span.arrow {
+    color: $gruvbox-grey-2;
+    padding-right: 0.5rem;
+    transform: translateX(-0.5rem);
+    transition: all 0.15s ease;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+
+  &:hover span.arrow {
+    color: $gruvbox-white;
+    transform: translateX(0);
+  }
+}
+
+p.entry-stack {
+  padding-bottom: 0.3rem;
+  border-color: $gruvbox-grey-2;
 }
 
 ::-webkit-scrollbar {

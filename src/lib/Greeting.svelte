@@ -11,7 +11,7 @@
     <ul>
       <li>student</li>
       <li>designer</li>
-      <li>web_developer</li>
+      <li>programmer</li>
     </ul>
   </div>
   <div class="contact-container">

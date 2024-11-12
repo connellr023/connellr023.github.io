@@ -5,9 +5,10 @@
   import Header from "$lib/Header.svelte";
   import Greeting from "$lib/Greeting.svelte";
   import TechCarousel from "$lib/TechCarousel.svelte";
-  import ProjectEntry from "$lib/ProjectEntry.svelte";
+  import ProjectEntry from "$lib/project/ProjectEntry.svelte";
 
   import "../styles/global.scss";
+  import ExperienceEntry from "$lib/experience/ExperienceEntry.svelte";
 
   if (browser) {
     const onHashChanged = () => {
@@ -34,11 +35,10 @@
 <Greeting />
 <div class="content-container">
   <p class="left-bar intro fade-in">
-    Currently, I am a <i>Computer Science</i> student at the
-    <i>University of Calgary</i>. I specialize in building <i>interactive</i>,
-    <i>scalable</i>, and <i>secure</i> software tailored to the web. Whether
-    that be in the context of a <i>web app</i>, <i>mobile app</i>, or a
-    <i>static website</i>, I am consistently working to improve these skills.
+    I am a <i>Computer Science</i> student at the <i>University of Calgary</i>,
+    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software development.
+    I have experience in building <i>web applications</i> and <i>real-time embedded systems</i>,
+    and I am dedicated to continuously enhancing my skills.
   </p>
 
   <h2 class="left-bar fade-in">technologies</h2>
@@ -48,6 +48,41 @@
   </p>
   <div class="carousel-container fade-in">
     <TechCarousel />
+  </div>
+
+  <h2 id="experience" class="left-bar fade-in">experience</h2>
+  <p class="left-bar fade-in">
+    This area is dedicated to work and volunteer experience related to software
+    development.
+  </p>
+  <div class="fade-in">
+    <ExperienceEntry
+      href="/experience/garmin"
+      company="Garmin"
+      position="Software Engineering Intern"
+      description="A global leader in the design and manufacturing of GPS navigation and communication devices."
+      stack={["C"]}
+      languages={[
+        ["C", "c"],
+      ]}
+    />
+  </div>
+  <div class="fade-in">
+    <ExperienceEntry
+      href="/experience/soar"
+      startDate="September 2024"
+      company="Student Organization for Aerospace Research (SOAR)"
+      position="Avionics Software Member"
+      description="The University of Calgary’s foremost student run high rocketry research team."
+      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Pocketbase", "Raspberry Pi", "STM32", "FreeRTOS"]}
+      languages={[
+        ["C", "c"],
+        ["C++", "cpp"],
+        ["Python", "python"],
+        ["Svelte", "svelte"],
+        ["TS", "ts"],
+      ]}
+    />
   </div>
 
   <h2 id="main_projects" class="left-bar fade-in">main_projects</h2>
@@ -192,7 +227,7 @@
       href="/projects/self-checkout-station"
       name="Self-Checkout Station"
       description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
-      stack={["Java, JUnit", "Swing"]}
+      stack={["Java", "JUnit", "Swing"]}
       languageData={[["Java", "java", 100]]}
     />
   </div>
