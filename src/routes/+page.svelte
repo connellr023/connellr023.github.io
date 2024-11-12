@@ -5,7 +5,7 @@
   import Header from "$lib/Header.svelte";
   import Greeting from "$lib/Greeting.svelte";
   import TechCarousel from "$lib/TechCarousel.svelte";
-  import ProjectEntry from "$lib/ProjectEntry.svelte";
+  import ProjectEntry from "$lib/project/ProjectEntry.svelte";
 
   import "../styles/global.scss";
 

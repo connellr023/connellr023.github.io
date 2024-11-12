@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Graph from "./Graph.svelte";
+  import Graph from "../Graph.svelte";
   import type { GraphData } from "$lib/index";
 
   export let isPrivate: boolean;
@@ -10,7 +10,7 @@
   export let href: string = "";
 </script>
 
-<a class="entry-container left-bar red" draggable={false} {href}>
+<a class="container entry-container left-bar red" draggable={false} {href}>
   <h3 class="entry-title">
     <span class="token-red">{isPrivate ? "private" : "public"}</span>
     <span class="underline string">{name}</span>

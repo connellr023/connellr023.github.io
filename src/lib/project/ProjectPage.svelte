@@ -62,7 +62,7 @@
 </div>
 
 <style lang="scss">
-  @import "../styles/variables.scss";
+  @import "../../styles/variables.scss";
 
   div.title-container {
     display: flex;

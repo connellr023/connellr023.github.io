@@ -1,5 +1,5 @@
 <script>
-  import ProjectPage from "$lib/ProjectPage.svelte";
+  import ProjectPage from "$lib/project/ProjectPage.svelte";
 
   import "../../../styles/global.scss";
 </script>

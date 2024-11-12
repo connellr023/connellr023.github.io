@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { GraphData } from "$lib";
-  import Graph from "./Graph.svelte";
+  import Graph from "../Graph.svelte";
 
   export let title: string;
   export let href: string;
