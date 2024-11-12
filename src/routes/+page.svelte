@@ -35,11 +35,10 @@
 <Greeting />
 <div class="content-container">
   <p class="left-bar intro fade-in">
-    Currently, I am a <i>Computer Science</i> student at the
-    <i>University of Calgary</i>. I specialize in building <i>interactive</i>,
-    <i>scalable</i>, and <i>secure</i> software tailored to the web. Whether
-    that be in the context of a <i>web app</i>, <i>mobile app</i>, or a
-    <i>static website</i>, I am consistently working to improve these skills.
+    I am a <i>Computer Science</i> student at the <i>University of Calgary</i>,
+    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software development.
+    I have experience in building <i>web applications</i> and <i>real-time embedded systems</i>,
+    and I am dedicated to continuously enhancing my skills.
   </p>
 
   <h2 class="left-bar fade-in">technologies</h2>
@@ -58,8 +57,8 @@
   </p>
   <div class="fade-in">
     <ExperienceEntry
-      href=""
-      company="Garmin Canada Inc."
+      href="/experience/garmin"
+      company="Garmin"
       position="Software Engineering Intern"
       description="A global leader in the design and manufacturing of GPS navigation and communication devices."
       stack={["C"]}
@@ -70,17 +69,18 @@
   </div>
   <div class="fade-in">
     <ExperienceEntry
-      href=""
+      href="/experience/soar"
       startDate="September 2024"
       company="Student Organization for Aerospace Research (SOAR)"
       position="Avionics Software Member"
       description="The University of Calgary’s foremost student run high rocketry research team."
-      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Raspberry Pi", "STM32", "FreeRTOS"]}
+      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Pocketbase", "Raspberry Pi", "STM32", "FreeRTOS"]}
       languages={[
         ["C", "c"],
         ["C++", "cpp"],
         ["Python", "python"],
         ["Svelte", "svelte"],
+        ["TS", "ts"],
       ]}
     />
   </div>
@@ -227,7 +227,7 @@
       href="/projects/self-checkout-station"
       name="Self-Checkout Station"
       description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
-      stack={["Java, JUnit", "Swing"]}
+      stack={["Java", "JUnit", "Swing"]}
       languageData={[["Java", "java", 100]]}
     />
   </div>
