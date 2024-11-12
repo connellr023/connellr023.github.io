@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import type { CommitResponse } from "$lib/index";
+  import type { CommitResponse } from "$lib/types/CommitResponse";
 
   const commitIdRegex = /([a-f0-9]{40})$/;
   const apiEndpoint =

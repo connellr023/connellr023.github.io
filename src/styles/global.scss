@@ -132,12 +132,12 @@ div.row {
   $dist: 0.5rem;
 
   &:before {
-    content: "/\*";
+    content: "/*";
     margin-right: $dist;
   }
 
   &:after {
-    content: "\*/";
+    content: "*/";
     margin-left: $dist;
   }
 }
@@ -156,6 +156,10 @@ div.row {
 
   &.green {
     border-color: $gruvbox-green;
+  }
+
+  &.lime {
+    border-color: $gruvbox-lime;
   }
 
   &.yellow {

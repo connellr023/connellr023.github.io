@@ -8,6 +8,7 @@
   import ProjectEntry from "$lib/project/ProjectEntry.svelte";
 
   import "../styles/global.scss";
+  import ExperienceEntry from "$lib/experience/ExperienceEntry.svelte";
 
   if (browser) {
     const onHashChanged = () => {
@@ -55,6 +56,34 @@
     This area is dedicated to work and volunteer experience related to software
     development.
   </p>
+  <div class="fade-in">
+    <ExperienceEntry
+      href=""
+      company="Garmin Canada Inc."
+      position="Software Engineering Intern"
+      description="A global leader in the design and manufacturing of GPS navigation and communication devices."
+      stack={["C"]}
+      languages={[
+        ["C", "c"],
+      ]}
+    />
+  </div>
+  <div class="fade-in">
+    <ExperienceEntry
+      href=""
+      startDate="September 2024"
+      company="Student Organization for Aerospace Research (SOAR)"
+      position="Avionics Software Member"
+      description="The University of Calgary’s foremost student run high rocketry research team."
+      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Raspberry Pi", "STM32", "FreeRTOS"]}
+      languages={[
+        ["C", "c"],
+        ["C++", "cpp"],
+        ["Python", "python"],
+        ["Svelte", "svelte"],
+      ]}
+    />
+  </div>
 
   <h2 id="main_projects" class="left-bar fade-in">main_projects</h2>
   <p class="left-bar fade-in">
