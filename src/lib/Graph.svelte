@@ -100,6 +100,11 @@
       background-color: $lang-python;
       color: $gruvbox-white;
     }
+
+    &.csharp {
+      background-color: $lang-csharp;
+      color: $gruvbox-white;
+    }
   }
 
   div.container {

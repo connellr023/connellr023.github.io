@@ -36,9 +36,10 @@
 <div class="content-container">
   <p class="left-bar intro fade-in">
     I am a <i>Computer Science</i> student at the <i>University of Calgary</i>,
-    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software development.
-    I have experience in building <i>web applications</i> and <i>real-time embedded systems</i>,
-    and I am dedicated to continuously enhancing my skills.
+    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i>
+    software development. I have experience in building <i>web applications</i>
+    and <i>real-time embedded systems</i>, and I am dedicated to continuously
+    enhancing my skills.
   </p>
 
   <h2 class="left-bar fade-in">technologies</h2>
@@ -62,9 +63,7 @@
       position="Software Engineering Intern"
       description="A global leader in the design and manufacturing of GPS navigation and communication devices."
       stack={["C"]}
-      languages={[
-        ["C", "c"],
-      ]}
+      languages={[["C", "c"]]}
     />
   </div>
   <div class="fade-in">
@@ -74,7 +73,17 @@
       company="Student Organization for Aerospace Research (SOAR)"
       position="Avionics Software Member"
       description="The University of Calgary’s foremost student run high rocketry research team."
-      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Pocketbase", "Raspberry Pi", "STM32", "FreeRTOS"]}
+      stack={[
+        "C",
+        "C++",
+        "Python",
+        "Svelte",
+        "Protobuf",
+        "Pocketbase",
+        "Raspberry Pi",
+        "STM32",
+        "FreeRTOS",
+      ]}
       languages={[
         ["C", "c"],
         ["C++", "cpp"],
@@ -248,6 +257,90 @@
         ["TS", "ts", 83],
         ["SCSS", "scss", 17],
       ]}
+    />
+  </div>
+
+  <h2 id="historical" class="left-bar fade-in">historical</h2>
+  <p class="left-bar fade-in">
+    This section is dedicated to projects that I developed during my years in
+    Middle School and High School.
+  </p>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/platscii"
+      name="PlatSCII"
+      description="A text adventure platformer developed for Ludum Dare 41. Developed with a team of 3."
+      stack={[
+        "Unity",
+        "C#",
+        "Pyxel Art",
+        "Ableton Suite 9",
+        "BFXR",
+        "Mercurial",
+        "Tortoise HG",
+      ]}
+      languageData={[["C#", "csharp", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/crumble"
+      name="CRUMBLE"
+      description="A turn-based strategy game developed for Ludum Dare 42. Developed with a team of 3."
+      stack={[
+        "Unity",
+        "C#",
+        "Aesprite",
+        "Ableton Studio",
+        "Mercurial",
+        "Tortoise HG",
+      ]}
+      languageData={[["C#", "csharp", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/dungeon-o-coins"
+      name="Dungeon O' Coins"
+      description="A level-based platformer developed for Ludum Dare 43. Developed with a team of 3."
+      stack={["Unity", "C#", "Aesprite", "Mercurial", "Tortoise HG"]}
+      languageData={[["C#", "csharp", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/spirit"
+      name="Spirit"
+      description="You are stranded in a world of basic geometry and being hunted by squares hungry for Spirits. Developed for Ludum Dare 44."
+      stack={["Unity", "C#", "Bosca Ceoil", "Adobe Illustrator", "Paint.NET"]}
+      languageData={[["C#", "csharp", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/crumble-reborn"
+      name="Crumble Reborn"
+      description="A multiplayer top-down view web game where you must battle another opponent with a rocket launcher on a crumbling map."
+      stack={["Typescript", "Socket.io", "P5.js", "JQuery"]}
+      languageData={[
+        ["TS", "ts", 93],
+        ["SCSS", "scss", 7],
+      ]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/colour-battle"
+      name="Colour Battle"
+      description="A 2D multiplayer platformer where the goal is to paint the level with your colour."
+      stack={["Java", "Processing"]}
+      languageData={[["Java", "java", 100]]}
     />
   </div>
 </div>

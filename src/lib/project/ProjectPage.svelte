@@ -14,7 +14,8 @@
     | "main_projects"
     | "learning_projects"
     | "school_projects"
-    | "hackathons";
+    | "hackathons"
+    | "historical";
 
   export let deployment: [string, string] | null = null;
   export let repository: [string, string] | null = null;

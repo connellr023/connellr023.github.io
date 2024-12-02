@@ -10,6 +10,7 @@
     "learning_projects",
     "school_projects",
     "hackathons",
+    "historical",
   ];
 </script>
 
