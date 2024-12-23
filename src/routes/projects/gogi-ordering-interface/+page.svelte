@@ -27,7 +27,7 @@
   </p>
 
   <h2 class="left-bar fade-in">images</h2>
-  <p class="fade-in">
+  <p class="left-bar fade-in">
     Below are some images of the interface. Also, see the deployment to see the
     entire interface and its features.
   </p>
