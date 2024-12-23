@@ -100,6 +100,10 @@
       background-color: $lang-python;
       color: $gruvbox-white;
     }
+
+    &.dart {
+      background-color: $lang-dart;
+    }
   }
 
   div.container {

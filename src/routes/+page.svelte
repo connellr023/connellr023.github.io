@@ -36,9 +36,11 @@
 <div class="content-container">
   <p class="left-bar intro fade-in">
     I am a <i>Computer Science</i> student at the <i>University of Calgary</i>,
-    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i> software development.
-    I have experience in building <i>web applications</i> and <i>real-time embedded systems</i>,
-    and I am dedicated to continuously enhancing my skills.
+    specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i>
+    software development. I have experience with building
+    <i>web applications</i>
+    as well as <i>embedded systems</i>, and I am dedicated to continuously
+    enhancing my skills.
   </p>
 
   <h2 class="left-bar fade-in">technologies</h2>
@@ -62,9 +64,7 @@
       position="Software Engineering Intern"
       description="A global leader in the design and manufacturing of GPS navigation and communication devices."
       stack={["C"]}
-      languages={[
-        ["C", "c"],
-      ]}
+      languages={[["C", "c"]]}
     />
   </div>
   <div class="fade-in">
@@ -74,7 +74,17 @@
       company="Student Organization for Aerospace Research (SOAR)"
       position="Avionics Software Member"
       description="The University of Calgary’s foremost student run high rocketry research team."
-      stack={["C", "C++", "Python", "Svelte", "Protobuf", "Pocketbase", "Raspberry Pi", "STM32", "FreeRTOS"]}
+      stack={[
+        "C",
+        "C++",
+        "Python",
+        "Svelte",
+        "Protobuf",
+        "Pocketbase",
+        "Raspberry Pi",
+        "STM32",
+        "FreeRTOS",
+      ]}
       languages={[
         ["C", "c"],
         ["C++", "cpp"],
@@ -90,6 +100,20 @@
     This section is dedicated to the projects that have had the largest scale,
     complexity and required significant time and effort.
   </p>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/transient-os"
+      name="Transient OS"
+      description="A simple time-sharing operating system for concurrency on the Raspberry Pi 3."
+      stack={["C++", "ARMv8 Assembly", "GNU Make", "Raspberry Pi 3"]}
+      languageData={[
+        ["C++", "cpp", 82],
+        ["Assembly", "asm", 15],
+        ["Make", "make", 3],
+      ]}
+    />
+  </div>
   <div class="fade-in">
     <ProjectEntry
       isPrivate={true}
@@ -213,7 +237,7 @@
       href="/projects/snesk"
       name="SNESK"
       description="A re-implementation of snake that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
-      stack={["C", "GNU Make", "Raspberry Pi 4"]}
+      stack={["C", "ARMv8 Assembly", "GNU Make", "Raspberry Pi 4"]}
       languageData={[
         ["C", "c", 94],
         ["Assembly", "asm", 3],
@@ -229,6 +253,30 @@
       description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
       stack={["Java", "JUnit", "Swing"]}
       languageData={[["Java", "java", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/gogi-ordering-interface"
+      name="Gogi Ordering Interface"
+      description="An interface for a Korean BBQ restaurant that allows customers to order food and view their bill. Built with a team of 4."
+      stack={["Dart", "Flutter"]}
+      languageData={[["Dart", "dart", 100]]}
+    />
+  </div>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/game-swap"
+      name="Game Swap"
+      description="A web application that allows users to trade video games with others. Built with a team of 3."
+      stack={["SvelteKit", "TypeScript", "MySQL", "Docker"]}
+      languageData={[
+        ["TS", "ts", 51],
+        ["Svelte", "svelte", 46],
+        ["Docker", "docker", 3],
+      ]}
     />
   </div>
 
