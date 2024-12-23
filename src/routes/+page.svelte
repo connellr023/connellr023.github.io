@@ -37,8 +37,9 @@
   <p class="left-bar intro fade-in">
     I am a <i>Computer Science</i> student at the <i>University of Calgary</i>,
     specializing in <i>interactive</i>, <i>scalable</i>, and <i>secure</i>
-    software development. I have experience in building <i>web applications</i>
-    and <i>real-time embedded systems</i>, and I am dedicated to continuously
+    software development. I have experience with building
+    <i>web applications</i>
+    as well as <i>embedded systems</i>, and I am dedicated to continuously
     enhancing my skills.
   </p>
 
