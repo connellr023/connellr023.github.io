@@ -13,5 +13,5 @@
   ]}
 >
   <h2 class="left-bar fade-in">overview</h2>
-  <p class="left-bar fade-in">hi</p>
+  <p class="left-bar fade-in">Coming soon!</p>
 </ProjectPage>
