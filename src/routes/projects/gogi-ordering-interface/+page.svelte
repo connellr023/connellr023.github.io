@@ -33,7 +33,7 @@
   </p>
   <div class="image-container">
     <img
-      class="fade-in"
+      class="left-bar fade-in"
       src="/images/gogi-ordering-interface/empty-session-order.png"
       alt="Gogi Ordering Interface empty session order"
     />

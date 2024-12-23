@@ -23,7 +23,7 @@
   </p>
 
   <h2 class="left-bar fade-in">images</h2>
-  <p class="fade-in">
+  <p class="left-bar fade-in">
     Below are some images of the platform. It is worth noting these images do
     not show every feature of the project.
   </p>
