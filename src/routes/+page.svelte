@@ -108,8 +108,8 @@
       description="A simple time-sharing operating system for concurrency on the Raspberry Pi 3."
       stack={["C++", "ARMv8 Assembly", "GNU Make", "Raspberry Pi 3"]}
       languageData={[
-        ["C++", "cpp", 82],
-        ["Assembly", "asm", 15],
+        ["C++", "cpp", 87],
+        ["Assembly", "asm", 10],
         ["Make", "make", 3],
       ]}
     />
