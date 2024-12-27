@@ -105,7 +105,7 @@
       isPrivate={false}
       href="/projects/transient-os"
       name="Transient OS"
-      description="A simple time-sharing operating system for concurrency on the Raspberry Pi 3."
+      description="A robust time-sharing operating system designed for building concurrent systems on the Raspberry Pi 3."
       stack={["C++", "ARMv8 Assembly", "GNU Make", "Raspberry Pi 3"]}
       languageData={[
         ["C++", "cpp", 87],
