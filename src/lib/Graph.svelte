@@ -104,6 +104,15 @@
     &.dart {
       background-color: $lang-dart;
     }
+
+    &.js {
+      background-color: $lang-js;
+    }
+
+    &.css {
+      background-color: $lang-css;
+      color: $gruvbox-white;
+    }
   }
 
   div.container {

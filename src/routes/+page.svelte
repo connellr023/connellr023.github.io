@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy, afterUpdate } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { browser } from "$app/environment";
 
   import Header from "$lib/Header.svelte";
@@ -295,6 +295,27 @@
       languageData={[
         ["TS", "ts", 83],
         ["SCSS", "scss", 17],
+      ]}
+    />
+  </div>
+
+  <h2 id="historical" class="left-bar fade-in">historical</h2>
+  <p class="left-bar fade-in">
+    This section is dedicated to projects that I developed during my years in
+    Middle School and High School.
+  </p>
+  <div class="fade-in">
+    <ProjectEntry
+      isPrivate={false}
+      href="/projects/folio"
+      name="Folio"
+      description="A forum platform where users can post, comment, and reply on various topics. Users can upvote posts, with top-voted posts displayed on the front page. Comments use a liking system. Notifications are sent for replies, comments, or rank changes"
+      stack={["PHP", "MySQL", "JavaScript", "JQuery", "Docker"]}
+      languageData={[
+        ["PHP", "php", 50],
+        ["JS", "js", 33],
+        ["CSS", "css", 15],
+        ["Docker", "docker", 2],
       ]}
     />
   </div>
