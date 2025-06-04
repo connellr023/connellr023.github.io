@@ -113,6 +113,11 @@
       background-color: $lang-css;
       color: $gruvbox-white;
     }
+
+    &.groovy {
+      background-color: $lang-groovy;
+      color: $gruvbox-black;
+    }
   }
 
   div.container {

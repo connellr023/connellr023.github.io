@@ -56,6 +56,16 @@
   }
 
   div.name-container {
+    & > h1 {
+      display: flex;
+      flex-direction: row;
+
+      &::before {
+        color: $gruvbox-green;
+        content: "*";
+      }
+    }
+
     ul {
       display: flex;
       flex-direction: column;

@@ -60,11 +60,17 @@
   <div class="fade-in">
     <ExperienceEntry
       href="/experience/garmin"
+      startDate="May 2025"
       company="Garmin"
       position="Software Engineering Intern"
       description="A global leader in the design and manufacturing of GPS navigation and communication devices."
-      stack={["C"]}
-      languages={[["C", "c"]]}
+      stack={["C", "C++", "Python", "Jenkins"]}
+      languages={[
+        ["C", "c"],
+        ["C++", "cpp"],
+        ["Python", "python"],
+        ["Groovy", "groovy"],
+      ]}
     />
   </div>
   <div class="fade-in">

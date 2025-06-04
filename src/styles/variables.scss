@@ -28,35 +28,43 @@ $lang-python: #3572a5;
 $lang-dart: #00b4ab;
 $lang-js: #f1e05a;
 $lang-css: #563d7c;
+$lang-groovy: #4298b8;
 
 $mobile-breakpoint: 460px;
 $max-content-width: 800px;
 
 $tech-icon-size: clamp(25px, 5lvw, 60px);
 
-@mixin fade-transform($transform, $duration: 0.5s, $delay-step: 0.15s, $children: 1, $anim-delay: 0, $anim-id) {
-    & > * {
-        animation: $duration fade-transform-#{$anim-id} ease forwards;
-        animation-delay: $anim-delay;
+@mixin fade-transform(
+  $transform,
+  $duration: 0.5s,
+  $delay-step: 0.15s,
+  $children: 1,
+  $anim-delay: 0,
+  $anim-id
+) {
+  & > * {
+    animation: $duration fade-transform-#{$anim-id} ease forwards;
+    animation-delay: $anim-delay;
 
-        @keyframes fade-transform-#{$anim-id} {
-            0% {
-                opacity: 0;
-                transform: $transform;
-            }
+    @keyframes fade-transform-#{$anim-id} {
+      0% {
+        opacity: 0;
+        transform: $transform;
+      }
 
-            100% {
-                opacity: 1;
-                transform: initial;
-            }
-        }
+      100% {
+        opacity: 1;
+        transform: initial;
+      }
     }
+  }
 
-    @for $i from 1 through $children {
-        & > *:nth-child(#{$i}) {
-            transform: translate(0, 0);
-            opacity: 0;
-            animation-delay: (($i - 1) * $delay-step) + $anim-delay;
-        }
+  @for $i from 1 through $children {
+    & > *:nth-child(#{$i}) {
+      transform: translate(0, 0);
+      opacity: 0;
+      animation-delay: (($i - 1) * $delay-step) + $anim-delay;
     }
+  }
 }

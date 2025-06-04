@@ -127,5 +127,6 @@
   p.contributers {
     border-color: $gruvbox-grey-2;
     padding-top: 0.2rem;
+    padding-right: 0.5rem;
   }
 </style>
