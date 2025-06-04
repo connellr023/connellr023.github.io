@@ -1,13 +1,13 @@
 <script>
   import Typescript from "./vector/Typescript.svelte";
   import Rust from "./vector/Rust.svelte";
+  import Go from "./vector/Go.svelte";
   import Vue from "./vector/Vue.svelte";
   import React from "./vector/React.svelte";
   import C from "./vector/C.svelte";
   import Java from "./vector/Java.svelte";
   import Python from "./vector/Python.svelte";
   import PHP from "./vector/PHP.svelte";
-  import Postgres from "./vector/Postgres.svelte";
   import Docker from "./vector/Docker.svelte";
 </script>
 
@@ -22,6 +22,12 @@
     <div>
       <Rust />
       <p>Rust</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <Go />
+      <p>Go</p>
     </div>
   </li>
   <li>
@@ -58,12 +64,6 @@
     <div>
       <PHP />
       <p>PHP</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <Postgres />
-      <p>PostgreSQL</p>
     </div>
   </li>
   <li>

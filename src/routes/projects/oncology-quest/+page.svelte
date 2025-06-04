@@ -7,7 +7,10 @@
 <ProjectPage
   title="Oncology Quest"
   category="main_projects"
-  deployment={["oncologyquest.net", "https://www.oncologyquest.net/"]}
+  repository={[
+    "connellr023/oncology-quest",
+    "https://github.com/connellr023/oncology-quest",
+  ]}
 >
   <h2 class="left-bar fade-in fade-in">overview</h2>
   <p class="left-bar fade-in fade-in">
@@ -17,7 +20,7 @@
     update the rotation structure as needed.
   </p>
   <p class="left-bar fade-in fade-in">
-    It is currently in use by <b>6+ trainees</b> and <b>2 rotation directors</b>
+    It was in use by <b>6+ trainees</b> and <b>2 rotation directors</b>
     at the <b>Tom Baker Cancer Centre</b>.
   </p>
 
