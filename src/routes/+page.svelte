@@ -108,7 +108,6 @@
   </p>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/transient-os"
       name="Transient OS"
       description="A robust time-sharing operating system designed for building concurrent systems on the Raspberry Pi 3."
@@ -122,7 +121,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={true}
       href="/projects/oncology-quest"
       name="Oncology Quest"
       description="A web app architected to aid Medical Oncology trainees and rotation directors."
@@ -154,7 +152,6 @@
   </p>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/snake-plus-plus"
       name="Snake++"
       description="An infinitely playable version of the classic Snake game with power-ups and a high score system."
@@ -167,7 +164,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/chatter-reborn"
       name="Chatter Reborn"
       description="A massively concurrent chat application created for real-time, one-on-one conversations."
@@ -182,7 +178,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/chatter"
       name="Chatter"
       description="A web application designed for real-time, conversations within global chat rooms."
@@ -196,7 +191,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/tensort"
       name="tensort"
       description="A CLI tool that utilizes a ResNet convolutional neural network to recognize content in images and sort them into classes."
@@ -209,7 +203,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/gratis"
       name="gratis"
       description="A lightweight framework for developing RESTful APIs in PHP."
@@ -219,7 +212,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/connellr023.github.io"
       name="connellr023.github.io"
       description="My portfolio website which you are currently viewing!"
@@ -239,7 +231,6 @@
   </p>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={true}
       href="/projects/snesk"
       name="SNESK"
       description="A re-implementation of snake that runs on a bare metal Rapberry Pi 4 with a SNES controller. Built with a team of 2."
@@ -253,7 +244,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={true}
       href="/projects/self-checkout-station"
       name="Self-Checkout Station"
       description="A software system that controls a self-checkout station, including a user interface and interacts with a simulated hardware API. Built with a team of 20."
@@ -263,7 +253,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/gogi-ordering-interface"
       name="Gogi Ordering Interface"
       description="An interface for a Korean BBQ restaurant that allows customers to order food and view their bill. Built with a team of 4."
@@ -273,7 +262,6 @@
   </div>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/game-swap"
       name="Game Swap"
       description="A web application that allows users to trade video games with others. Built with a team of 3."
@@ -293,7 +281,6 @@
   </p>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/atla"
       name="Atla"
       description="A web app that aims to bring the Calgarian community together by providing a centralized platform to post and view volunteering events. Built with a team of 2."
@@ -312,7 +299,6 @@
   </p>
   <div class="fade-in">
     <ProjectEntry
-      isPrivate={false}
       href="/projects/folio"
       name="Folio"
       description="A forum platform where users can post, comment, and reply on various topics. Users can upvote posts, with top-voted posts displayed on the front page. Comments use a liking system. Notifications are sent for replies, comments, or rank changes"
