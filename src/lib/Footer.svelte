@@ -34,7 +34,7 @@
       target="_blank">MIT</a
     >{";"}
   </span>
-  <span class="divider">&copy 2024</span>
+  <span class="divider">&copy 2026</span>
   <span class="commit">
     <span class="token-red hide-token">let</span>
     <span class="hide-token">commit</span>

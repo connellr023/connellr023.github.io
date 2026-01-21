@@ -118,6 +118,11 @@
       background-color: $lang-groovy;
       color: $gruvbox-black;
     }
+
+    &.go {
+      background-color: $lang-go;
+      color: $gruvbox-white;
+    }
   }
 
   div.container {

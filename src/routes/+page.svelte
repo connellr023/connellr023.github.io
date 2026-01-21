@@ -273,6 +273,20 @@
       ]}
     />
   </div>
+  <div class="fade-in">
+    <ProjectEntry
+      href="/projects/tokenbase"
+      name="tokenbase"
+      description="A modular, AI-powered assistant platform that provides real-time chat, role-based access, and conversation tracking, designed for self-hosted or small organizational deployments. Built with a team of 4."
+      stack={["Next.js", "Redis", "Docker", "Ollama", "SurrealDB", "Jest"]}
+      languageData={[
+        ["TS", "ts", 47],
+        ["Go", "go", 37],
+        ["SCSS", "scss", 14],
+        ["Docker", "docker", 2],
+      ]}
+    />
+  </div>
 
   <h2 id="hackathons" class="left-bar fade-in">hackathons</h2>
   <p class="left-bar fade-in">
