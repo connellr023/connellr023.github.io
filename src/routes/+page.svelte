@@ -54,13 +54,12 @@
 
   <h2 id="experience" class="left-bar fade-in">experience</h2>
   <p class="left-bar fade-in">
-    This area is dedicated to work and volunteer experience related to software
-    development.
+    This area is dedicated to work experience related to software development.
   </p>
   <div class="fade-in">
     <ExperienceEntry
-      href="/experience/garmin"
       startDate="May 2025"
+      endDate="Aug 2026"
       company="Garmin"
       position="Software Engineering Intern"
       description="A global leader in the design and manufacturing of GPS navigation and communication devices."
@@ -70,33 +69,6 @@
         ["C++", "cpp"],
         ["Python", "python"],
         ["Groovy", "groovy"],
-      ]}
-    />
-  </div>
-  <div class="fade-in">
-    <ExperienceEntry
-      href="/experience/soar"
-      startDate="September 2024"
-      company="Student Organization for Aerospace Research (SOAR)"
-      position="Avionics Software Member"
-      description="The University of Calgary’s foremost student run high rocketry research team."
-      stack={[
-        "C",
-        "C++",
-        "Python",
-        "Svelte",
-        "Protobuf",
-        "Pocketbase",
-        "Raspberry Pi",
-        "STM32",
-        "FreeRTOS",
-      ]}
-      languages={[
-        ["C", "c"],
-        ["C++", "cpp"],
-        ["Python", "python"],
-        ["Svelte", "svelte"],
-        ["TS", "ts"],
       ]}
     />
   </div>
